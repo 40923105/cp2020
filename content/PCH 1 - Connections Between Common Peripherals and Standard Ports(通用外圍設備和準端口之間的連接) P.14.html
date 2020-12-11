@@ -1,0 +1,345 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>40923105 cp2020</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">40923105 cp2020</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li class='has-children'><a href='About.html'>About</a><ul class='dropdown'><li><a href='Develop.html'>Develop</a></li></ul><li><a href='website.html'>website</a><li class='has-children'><a href='H1.html'>H1</a><ul class='dropdown'><li><a href='PCH 1 - External Components of the Desktop System Unit (台式機系統單元的外部組件) P.13.html'>PCH 1 - External Components of the Desktop System Unit (台式機系統單元的外部組件) P.13</a><li><a href='PCH 1 - Connections Between Common Peripherals and Standard Ports(通用外圍設備和準端口之間的連接) P.14.html'>PCH 1 - Connections Between Common Peripherals and Standard Ports(通用外圍設備和準端口之間的連接) P.14</a><li><a href='PCH 1 -USB AND PS 2 (USB和PS 2) P.15.html'>PCH 1 -USB AND PS 2 (USB和PS 2) P.15</a><li><a href='PCH 1 - SCSI and FireWire (SCSI和FireWire) P.16.html'>PCH 1 - SCSI and FireWire (SCSI和FireWire) P.16</a><li><a href='PCH 1 - Serial and Parallel Ports (串行和並行端口) P.17.html'>PCH 1 - Serial and Parallel Ports (串行和並行端口) P.17</a><li><a href='PCH 2 - Procedures and Safety (程序與安全) P.18.html'>PCH 2 - Procedures and Safety (程序與安全) P.18</a><li><a href='PCH 2 - Introduction (簡介) P.19.html'>PCH 2 - Introduction (簡介) P.19</a><li><a href='PCH 2 - Operational Procedures Electrical Safety (操作程序 電氣安全) P.20.html'>PCH 2 - Operational Procedures Electrical Safety (操作程序 電氣安全) P.20</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">PCH 1 - External Components of the Desktop System Unit (台式機系統單元的外部組件) P.13 << <a href='PCH 1 - External Components of the Desktop System Unit (台式機系統單元的外部組件) P.13.html'>Previous</a> <a href='PCH 1 -USB AND PS 2 (USB和PS 2) P.15.html'>Next</a> >> PCH 1 -USB AND PS 2 (USB和PS 2) P.15<br /><h1>PCH 1 - Connections Between Common Peripherals and Standard Ports(通用外圍設備和準端口之間的連接) P.14</h1>
+<p id="N10688" lang="">The peripherals connect to the computer via standard ports. Ports allow for information to flow into or out of the computer as part of the input and output subsystems. External devices, such as keyboards, mice, printers, scanners, storage devices, monitors, and others can connect to the computer through various types of cables, which connect to specific ports. On most modern systems, this has been reduced down to a common, standard interface, the universal serial bus port (USB port). Older systems have various ports for various functions, which are now referred to as legacy ports, such as PS/2, serial, and parallel ports. They were difficult to configure and required hardware resources to be dedicated to them, such as interrupt requests, direct memory access, and specific I/O (input/output) port addresses. In USB, this is all handled by the operating system automatically. This makes hardware conflicts rare in current systems. Many customers will still have computers with legacy ports. So, it is important to understand multiple ports and connections.</p>
+<p lang=""><span>外圍設備通過標準端口連接到計算機。</span><span>端口允許信息作為輸入和輸出子系統的一部分流入或流出計算機。</span><span>外部設備（例如鍵盤，鼠標，打印機，掃描儀，存儲設備，監視器和其他設備）可以通過連接到特定端口的各種類型的電纜連接到計算機。</span><span>在大多數現代系統上，這已簡化為通用的標準接口，即通用串行總線端口（USB端口）。</span><span>較舊的系統具有用於各種功能的各種端口，這些端口現在稱為傳統端口，例如PS / 2，串行和並行端口。</span><span>它們很難配置，並且需要專用於它們的硬件資源，例如中斷請求，直接內存訪問和特定的I / O（輸入/輸出）端口地址。</span><span>在USB中，</span><span>這全部由操作系統自動處理。</span><span>這使得在當前系統中很少發生硬件衝突。</span><span>許多客戶仍將擁有帶有舊端口的計算機。</span><span>因此，了解多個端口和連接很重要。</span></p>
+<p id="N1068B" lang="">The photo below offers a close-up view of a motherboard’s port cluster.</p>
+<p lang=""><span>下圖提供了主板端口集群的特寫視圖。</span></p>
+<p id="N1068E" lang=""></p>
+<div class="imagewrap"><span class="image"><img class="popimg" height="151" id="_i_0" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH01/webcontent/PCH01/image20.png" width="560"/></span></div>
+<div class="imagewrap">The chart below describes the functions of the ports depicted in the image above.</div>
+<div class="imagewrap"><span>下表描述了上圖中描繪的端口的功能。</span></div>
+<table align="center" cellspacing="0" class="wbtable" lang="" style="width: 564px;">
+<tbody>
+<tr class="e" style="height: 30px;">
+<td lang="" style="height: 30px; text-align: center; width: 38px;">PORT (接口)</td>
+<td lang="" style="height: 30px; text-align: center; width: 107px;">NAME (名稱)</td>
+<td lang="" style="height: 30px; width: 398px;">FUNCTION (功能)</td>
+</tr>
+<tr style="height: 14px;">
+<td lang="" style="height: 14px; text-align: center; width: 38px;">A</td>
+<td lang="" style="height: 14px; text-align: center; width: 107px;">PS/2</td>
+<td lang="" style="height: 14px; width: 398px;">Used to connect keyboards and mice. (<span>用於連接鍵盤和鼠標。</span>)</td>
+</tr>
+<tr class="e" style="height: 28px;">
+<td lang="" style="height: 28px; text-align: center; width: 38px;">B</td>
+<td lang="" style="height: 28px; text-align: center; width: 107px;">USB</td>
+<td lang="" style="height: 28px; width: 398px;">Used to connect external devices with a<span> </span><em class="bold" lang="">universal serial bus</em><span> </span>(USB) connector, such as mice, keyboards, printers, and storage devices. (<span>用於通過</span><em class="bold" lang=""><span><span>通用串行總線</span></span></em><span><span>（USB）連接器</span><span>連接外部設備</span><span>，例如鼠標，鍵盤，打印機和存儲設備。</span></span>)</td>
+</tr>
+<tr style="height: 30px;">
+<td lang="" style="height: 30px; text-align: center; width: 38px;">C</td>
+<td lang="" style="height: 30px; text-align: center; width: 107px;">
+<div>S/PDIF Optical</div>
+(<span>S/PDIF光學</span>)</td>
+<td lang="" style="height: 30px; width: 398px;">Used to connect digital high-fidelity audio systems. (<span>用於連接數字高保真音頻系統。</span>)</td>
+</tr>
+<tr class="e" style="height: 5.97501px;">
+<td lang="" style="height: 5.97501px; text-align: center; width: 38px;">D</td>
+<td lang="" style="height: 5.97501px; text-align: center; width: 107px;">
+<div> HDMI</div>
+<div>(<span>HDMI接口</span>)</div>
+</td>
+<td lang="" style="height: 5.97501px; width: 398px;">Used to connect a<span> </span><em class="bold" lang="">high-definition multimedia interface<span> </span></em>(HDMI). (<span>用於連接</span><em class="bold" lang=""><span><span>高清多媒體接口<span> </span></span></span></em><span><span>（HDMI）。</span></span>)</td>
+</tr>
+<tr style="height: 14px;">
+<td lang="" style="height: 14px; text-align: center; width: 38px;">E</td>
+<td lang="" style="height: 14px; text-align: center; width: 107px;">VGA (<span>顯卡</span>)</td>
+<td lang="" style="height: 14px; width: 398px;">Used to connect a<span> </span><em class="bold" lang="">video graphics array<span> </span></em>(VGA) display device. (<span>用於連接</span><em class="bold" lang=""><span><span>視頻圖形陣列</span></span></em><span><span>（VGA）顯示設備。</span></span>)</td>
+</tr>
+<tr class="e" style="height: 14px;">
+<td lang="" style="height: 14px; text-align: center; width: 38px;">F</td>
+<td lang="" style="height: 14px; text-align: center; width: 107px;">DVI</td>
+<td lang="" style="height: 14px; width: 398px;">Used to connect a<span> </span><em class="bold" lang="">digital video interface<span> </span></em>(DVI) display device. (<span>用於連接</span><em class="bold" lang=""><span><span>數字視頻接口</span></span></em><span><span>（DVI）顯示設備。</span></span>)</td>
+</tr>
+<tr style="height: 28px;">
+<td lang="" style="height: 28px; text-align: center; width: 38px;">G</td>
+<td lang="" style="height: 28px; text-align: center; width: 107px;">USB</td>
+<td lang="" style="height: 28px; width: 398px;">Used to connect external devices with a<span> </span><em class="bold" lang="">universal serial bus</em><span> </span>(USB) connector, such as mice, keyboards, printers, and storage devices. (<span>用於通過</span><em class="bold" lang=""><span><span>通用串行總線</span></span></em><span><span>（USB）連接器</span><span>連接外部設備</span><span>，例如鼠標，鍵盤，打印機和存儲設備。)</span></span></td>
+</tr>
+<tr class="e" style="height: 28px;">
+<td lang="" style="height: 28px; text-align: center; width: 38px;">H</td>
+<td lang="" style="height: 28px; text-align: center; width: 107px;">IEEE 1394</td>
+<td lang="" style="height: 28px; width: 398px;">Used to connect external FireWire devices, such as hard drives and cameras. (<span>用於連接外部FireWire設備，例如硬盤驅動器和相機。)</span></td>
+</tr>
+<tr style="height: 14px;">
+<td lang="" style="height: 14px; text-align: center; width: 38px;">I</td>
+<td lang="" style="height: 14px; text-align: center; width: 107px;">RJ-45</td>
+<td lang="" style="height: 14px; width: 398px;">Used to connect to an Ethernet network. (<span>用於連接到以太網。</span>)</td>
+</tr>
+<tr class="e" style="height: 28px;">
+<td lang="" style="height: 28px; text-align: center; width: 38px;">J</td>
+<td lang="" style="height: 28px; text-align: center; width: 107px;">USB</td>
+<td lang="" style="height: 28px; width: 398px;">Used to connect external devices with a<span> </span><em class="bold" lang="">universal serial bus</em><span> </span>(USB) connector, such as mice, keyboards, printers, and storage devices. (<span>用於通過</span><em class="bold" lang=""><span><span>通用串行總線</span></span></em><span><span>（USB）連接器</span><span>連接外部設備</span><span>，例如鼠標，鍵盤，打印機和存儲設備。</span></span>)</td>
+</tr>
+<tr style="height: 14px;">
+<td lang="" style="height: 14px; text-align: center; width: 38px;">K</td>
+<td lang="" style="height: 14px; text-align: center; width: 107px;">Audio (<span>音訊</span>)</td>
+<td lang="" style="height: 14px; width: 398px;">Used to connect to a speaker system. (<span>用於連接揚聲器系統。</span>)</td>
+</tr>
+</tbody>
+</table>
+<p id="N10751" lang="">The photo below shows various types of connectors.</p>
+<p lang=""><span>下圖顯示了各種類型的連接器。</span></p>
+<p id="N10754" lang=""></p>
+<div class="imagewrap"><span class="image"><img alt="A photograph of 11 different types of connectors. Image A: A serial DB-9 cable. The connector has blue plastic pin receptacles in two rows. The top row has four pin receptacles and the bottom row has five pin receptacles. There is a white plastic housing on the connector with screws.    Image B: A DB-25 parallel cable. The metal connector has two rows of pins. There are twelve pins in the top row and thirteen pins in the bottom row. There is a white plastic housing on the connector with screws.    Image C: A DB-15 cable. The metal connector has two rows of pins, 8 in the first row, and 7 in the second row. There is a black plastic housing on the outside of the metal connector.    Image D: A VGA cable connector. It is a metal connector with three rows of pins with five pins in each row. There is a blue plastic housing on the connector with screws.    Image E: A DVI cable connector. It is a metal connector with two sets of pins. Each set has nine pins. There is also a small horizontal metal interface. There is a white plastic housing on the connector with screws.    Image F: A PS/2 cable. The PS/2 cable has a circular ending with six pin receptacles arrayed in a circle. There is a slightly larger rectangular receptacle in the center of the circle.    Image G: An RJ-11 (telephone modem) cable. It has a clear plastic connector with a tab. Colored smaller cables are visible on the inside.    Image H: An RJ-45 cable. It has a clear plastic connector. Colored smaller cables are visible on the inside with copper ends on each.    Image I: USB connector. A metal rectangular connector with a similarly shaped plastic insert that takes up a portion of the metal connection opening. A black plastic housing surrounds the metal connection.    Image J: An HDMI cable. It is a black plastic cable with a metal connector on the end.    Image K: A mini stereo cable. It is a black cable with a green plastic end with a round metal connector coming out of the end." class="popimg" height="449" id="_i_3" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH01/webcontent/PCH01/image21.png" title="A photograph of 11 different types of connectors. Image A: A serial DB-9 cable. The connector has blue plastic pin receptacles in two rows. The top row has four pin receptacles and the bottom row has five pin receptacles. There is a white plastic housing on the connector with screws.    Image B: A DB-25 parallel cable. The metal connector has two rows of pins. There are twelve pins in the top row and thirteen pins in the bottom row. There is a white plastic housing on the connector with screws.    Image C: A DB-15 cable. The metal connector has two rows of pins, 8 in the first row, and 7 in the second row. There is a black plastic housing on the outside of the metal connector.    Image D: A VGA cable connector. It is a metal connector with three rows of pins with five pins in each row. There is a blue plastic housing on the connector with screws.    Image E: A DVI cable connector. It is a metal connector with two sets of pins. Each set has nine pins. There is also a small horizontal metal interface. There is a white plastic housing on the connector with screws.    Image F: A PS/2 cable. The PS/2 cable has a circular ending with six pin receptacles arrayed in a circle. There is a slightly larger rectangular receptacle in the center of the circle.    Image G: An RJ-11 (telephone modem) cable. It has a clear plastic connector with a tab. Colored smaller cables are visible on the inside.    Image H: An RJ-45 cable. It has a clear plastic connector. Colored smaller cables are visible on the inside with copper ends on each.    Image I: USB connector. A metal rectangular connector with a similarly shaped plastic insert that takes up a portion of the metal connection opening. A black plastic housing surrounds the metal connection.    Image J: An HDMI cable. It is a black plastic cable with a metal connector on the end.    Image K: A mini stereo cable. It is a black cable with a green plastic end with a round metal connector coming out of the end." width="565"/></span>
+<p id="N1075C" lang=""><a aria-describedby="N1075F" class="extra" id=""></a></p>
+</div>
+<p id="N1079E" lang="">The chart below describes the functions of the connectors depicted in the image above.</p>
+<p lang=""><span>下表描述了上圖中描述的連接器的功能。</span></p>
+<table align="center" cellspacing="0" class="wbtable" lang="" style="width: 564px;">
+<tbody>
+<tr class="e" style="height: 30px;">
+<td lang="" style="text-align: center; height: 30px; width: 76px;">CONNECTOR (連接器)</td>
+<td lang="" style="text-align: center; height: 30px; width: 140.4px;">NAME (名稱)</td>
+<td lang="" style="height: 30px; width: 333.6px;">FUNCTION (功能)</td>
+</tr>
+<tr style="height: 30px;">
+<td lang="" style="text-align: center; height: 30px; width: 76px;">A</td>
+<td lang="" style="text-align: center; height: 30px; width: 140.4px;">
+<p>DB-9 serial</p>
+<p>(<span>DB-9序列</span>)</p>
+</td>
+<td lang="" style="height: 30px; width: 333.6px;">Used for serial devices such as a mouse or external modem. (<span>用於串行設備，例如鼠標或外部調製解調器。</span>)</td>
+</tr>
+<tr class="e" style="height: 31px;">
+<td lang="" style="text-align: center; height: 31px; width: 76px;">B</td>
+<td lang="" style="text-align: center; height: 31px; width: 140.4px;">
+<p>DB-25 parallel</p>
+<p>(<span>DB-25並行</span>)</p>
+</td>
+<td lang="" style="height: 31px; width: 333.6px;">Used to connect printers. (<span>用於連接打印機。</span>)</td>
+</tr>
+<tr style="height: 46px;">
+<td lang="" style="text-align: center; height: 46px; width: 76px;">C</td>
+<td lang="" style="text-align: center; height: 46px; width: 140.4px;">
+<p>DB-15<span> </span><em class="bold" lang="">(two rows of pin receptacles)</em></p>
+<p>(DB-15(兩排引腳插座))</p>
+</td>
+<td lang="" style="height: 46px; width: 333.6px;">Used to connect joysticks or<span> </span><em class="bold" lang="">musical instrument digital interface<span> </span></em>(MIDI) devices. (<span>用於連接操縱桿或</span><em class="bold" lang=""><span><span>樂器數字接口</span></span></em><span><span>（MIDI）設備。</span></span>)</td>
+</tr>
+<tr class="e" style="height: 46px;">
+<td lang="" style="text-align: center; height: 46px; width: 76px;">D</td>
+<td lang="" style="text-align: center; height: 46px; width: 140.4px;">High-density DB-15<span> </span><em class="bold" lang=""><em class="bold" lang="">(three rows of pins) </em></em>(高密度DB-15(三排針))</td>
+<td lang="" style="height: 46px; width: 333.6px;">Used to connect a<span> </span><em class="bold" lang="">video graphics array</em><span> </span>(VGA) and<span> </span><em class="bold" lang="">super VGA</em><span> </span>(SVGA) display device. (<span>用於連接</span><em class="bold" lang=""><span><span>視頻圖形陣列</span></span></em><span><span>（VGA）和</span></span><em class="bold" lang=""><span><span>超級VGA</span></span></em><span><span>（SVGA）顯示設備。</span></span>)</td>
+</tr>
+<tr style="height: 28.7751px;">
+<td lang="" style="text-align: center; height: 28.7751px; width: 76px;">E</td>
+<td lang="" style="text-align: center; height: 28.7751px; width: 140.4px;">DVI video (<span>DVI視頻</span>)</td>
+<td lang="" style="height: 28.7751px; width: 333.6px;">Used to connect a<span> </span><em class="bold" lang="">digital video interface (DVI)</em><span> </span>display monitor. (<span>用於連接</span><em class="bold" lang=""><span><span>數字視頻接口（DVI）</span></span></em><span><span>顯示監視器。</span></span>)</td>
+</tr>
+<tr class="e" style="height: 42px;">
+<td lang="" style="text-align: center; height: 42px; width: 76px;">F</td>
+<td lang="" style="text-align: center; height: 42px; width: 140.4px;">6-pin mini-DIN (<span>6針mini-DIN</span>)</td>
+<td lang="" style="height: 42px; width: 333.6px;">Used for PS/2 keyboards and mice. By convention, purple connectors are used for keyboards and green connectors are used for mice. (<span>用於PS / 2鍵盤和鼠標。</span><span>按照慣例，紫色連接器用於鍵盤，綠色連接器用於鼠標。</span>)</td>
+</tr>
+<tr style="height: 46px;">
+<td lang="" style="text-align: center; height: 46px; width: 76px;">G</td>
+<td lang="" style="text-align: center; height: 46px; width: 140.4px;">RJ-11 (four wires inside plug interface) (<span>RJ-11（插頭接口內有四線）</span>)</td>
+<td lang="" style="height: 46px; width: 333.6px;">Used for internal modem or telephone. (<span>用於內部調製解調器或電話。</span>)</td>
+</tr>
+<tr class="e" style="height: 60px;">
+<td lang="" style="text-align: center; height: 60px; width: 76px;">H</td>
+<td lang="" style="text-align: center; height: 60px; width: 140.4px;">RJ-45<span> </span><em class="bold" lang="">(eight wires inside jack interface) </em>(RJ-45 （插孔接口內有八根電線）)</td>
+<td lang="" style="height: 60px; width: 333.6px;">Used to connect to an Ethernet network. (<span>用於連接到以太網。</span>)</td>
+</tr>
+<tr style="height: 28px;">
+<td lang="" style="text-align: center; height: 28px; width: 76px;">I</td>
+<td lang="" style="text-align: center; height: 28px; width: 140.4px;">USB type A (<span>USB A型</span>)</td>
+<td lang="" style="height: 28px; width: 333.6px;">Used for external<span> </span><em class="bold" lang="">universal serial bus</em><span> </span>(USB) devices such as printers and storage devices. (<span>用於外部</span><em class="bold" lang=""><span><span>通用串行總線</span></span></em><span><span>（USB）設備，例如打印機和存儲設備。</span></span>)</td>
+</tr>
+<tr class="e" style="height: 28px;">
+<td lang="" style="text-align: center; height: 28px; width: 76px;">J</td>
+<td lang="" style="text-align: center; height: 28px; width: 140.4px;">HDMI (<span>HDMI接口</span>)</td>
+<td lang="" style="height: 28px; width: 333.6px;">Used to connect a<span> </span><em class="bold" lang="">high definition multimedia interface (HDMI)</em><span> </span>display monitor. (<span>用於連接</span><em class="bold" lang=""><span><span>高清多媒體接口（HDMI）</span></span></em><span><span>顯示監視器。</span></span>)</td>
+</tr>
+<tr style="height: 42px;">
+<td lang="" style="text-align: center; height: 42px; width: 76px;">K</td>
+<td lang="" style="text-align: center; height: 42px; width: 140.4px;">Mini Stereo (<span>迷你立體聲</span>)</td>
+<td lang="" style="height: 42px; width: 333.6px;">Also known as "1/8 inch" or "3.5 mm" connectors, these are used to connect audio devices such as headphones and speakers. (<span>也稱為“ 1/8英寸”或“ 3.5毫米”連接器，這些連接器用於連接音頻設備，例如耳機和揚聲器。</span>)</td>
+</tr>
+</tbody>
+</table>
+<p></p><br />PCH 1 - External Components of the Desktop System Unit (台式機系統單元的外部組件) P.13 << <a href='PCH 1 - External Components of the Desktop System Unit (台式機系統單元的外部組件) P.13.html'>Previous</a> <a href='PCH 1 -USB AND PS 2 (USB和PS 2) P.15.html'>Next</a> >> PCH 1 -USB AND PS 2 (USB和PS 2) P.15</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
