@@ -133,10 +133,38 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">PCH 2 - Power Variation (功率變化) P.22 << <a href='PCH 2 - Power Variation (功率變化) P.22.html'>Previous</a> <a href='PCH 2 - Operational Procedures Electrostatic Discharge (操作程序 靜電放電) P.24.html'>Next</a> >> PCH 2 - Operational Procedures Electrostatic Discharge (操作程序 靜電放電) P.24<br /><h1>PCH 2 - Protecting People and Property (保護人員和財產) P.23</h1>
-<p><span>Electricity can be a common cause of fire, especially if the electrical circuits are overloaded. If a computer or outlet catches on fire, you should use a class C extinguisher, which is a carbon dioxide (CO</span><sub lang="">2</sub><span>)-based extinguisher. You should not attempt to extinguish an electrical fire with water, because water conducts electricity. If the fire is small, you may use a portable extinguisher to put the fire out immediately, but you should never put yourself in harm’s way. If the fire begins to get out of control, everyone should move to a safe area and call 911 for help immediately. Some server rooms have built-in fire suppression systems that release CO</span><sub lang="">2<span> </span></sub><span>or halon when a fire alarm occurs. Halon is a toxic compressed gas, in liquid form, that chemically disrupts a combustion reaction. A CO</span><sub lang="">2<span> </span></sub><span>system is designed to flood the room with carbon dioxide in order to remove all oxygen from the room, thereby killing the fire. People who are working in a server room and hear the fire alarm sounding must immediately vacate the area and get to a safe location. This is a life-threatening situation, both because of the fire and because of the potentially lethal nature of the fire-suppression systems.</span></p>
-<p><span><span>電力可能是引起火災的常見原因，尤其是在電路過載的情況下。如果計算機或插座著火，則應使用C類滅火器，它是一種基於二氧化碳（CO </span><sub lang=""><span><span>2</span></span></sub><span><span>）的滅火器。</span><span>您不應嘗試用水滅火，因為水可以導電。</span><span>如果火很小，則可以使用便攜式滅火器將火立即撲滅，但絕對不要使自己受傷。</span><span>如果火勢開始失控，所有人應移至安全區域並立即撥打911尋求幫助。</span><span>一些服務器機房具有內置的滅火系統，可釋放CO<span> </span></span></span><sub lang=""><span><span>2</span></span></sub><span><span>或哈龍，當發生火警時。</span><span>哈龍是有毒的壓縮氣體，呈液態，化學上會破壞燃燒反應。</span><span>CO<span> </span></span></span><sub lang=""><span><span>2</span></span></sub><span><span>系統設計用於向房間充斥二氧化碳，以清除房間中的所有氧氣，從而消除火災。</span><span>在服務器機房工作並聽到火警警報的人員必須立即離開該區域並到達安全位置。</span><span>由於起火以及滅火系統的潛在致命特性，這是威脅生命的情況。</span></span></span></p>
-<br />PCH 2 - Power Variation (功率變化) P.22 << <a href='PCH 2 - Power Variation (功率變化) P.22.html'>Previous</a> <a href='PCH 2 - Operational Procedures Electrostatic Discharge (操作程序 靜電放電) P.24.html'>Next</a> >> PCH 2 - Operational Procedures Electrostatic Discharge (操作程序 靜電放電) P.24</div>
+    <div id="tipue_search_content">PCH 2 - Operational Procedures Electrostatic Discharge (操作程序 靜電放電) P.24 << <a href='PCH 2 - Operational Procedures Electrostatic Discharge (操作程序 靜電放電) P.24.html'>Previous</a> <br /><h1>H3</h1>
+<p><strong>List Comprehensions</strong><span> </span><img class="chili" height="12" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png" width="10"/><span> </span><img class="chili" height="13" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png" width="11"/></p>
+<p>清單列表</p>
+<div><strong>Exercise 7 (and <a href="https://www.practicepython.org/solution/2014/03/26/07-list-comprehensions-solutions.html">Solution</a></strong>)<br/><i></i></div>
+<div></div>
+<div>練習7和解決方案</div>
+<p>Let’s say I give you a list saved in a variable:<span> </span><code class="highlighter-rouge">a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]</code>. Write one line of Python that takes this list<span> </span><code class="highlighter-rouge">a</code><span> </span>and makes a new list that has only the even elements of this list in it.</p>
+<p><span>比方說我給您一個保存在變量中的列表：</span><code class="highlighter-rouge">a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]</code><span><span>。</span><span>編寫一行Python來獲取此列表，</span></span><code class="highlighter-rouge">a</code><span><span>並創建一個僅包含該列表偶數元素的新列表。</span></span></p>
+<p><strong>Discussion</strong></p>
+<p>Concepts for this week:</p>
+<ul>
+<li>List comprehensions</li>
+</ul>
+<p><strong>List comprehensions</strong></p>
+<p>The idea of a<span> </span><em>list comprehension</em><span> </span>is to make code more compact to accomplish tasks involving lists. Take for example this code:</p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python">  <span class="n">years_of_birth</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1990</span><span class="p">,</span> <span class="mi">1991</span><span class="p">,</span> <span class="mi">1990</span><span class="p">,</span> <span class="mi">1990</span><span class="p">,</span> <span class="mi">1992</span><span class="p">,</span> <span class="mi">1991</span><span class="p">]</span>
+  <span class="n">ages</span> <span class="o">=</span> <span class="p">[]</span>
+  <span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="n">years_of_birth</span><span class="p">:</span> 
+    <span class="n">ages</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">2014</span> <span class="o">-</span> <span class="n">year</span><span class="p">)</span></code></pre>
+</figure>
+<p>And at the end, the variable<span> </span><code class="highlighter-rouge">ages</code><span> </span>has the list<span> </span><code class="highlighter-rouge">[24, 23, 24, 24, 22, 23]</code>. What this code did was translate the years of birth into ages, and it took us a for loop and an append statement to a new list to do that.</p>
+<p>Compare to this piece of code:</p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python">  <span class="n">years_of_birth</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1990</span><span class="p">,</span> <span class="mi">1991</span><span class="p">,</span> <span class="mi">1990</span><span class="p">,</span> <span class="mi">1990</span><span class="p">,</span> <span class="mi">1992</span><span class="p">,</span> <span class="mi">1991</span><span class="p">]</span>
+  <span class="n">ages</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2014</span> <span class="o">-</span> <span class="n">year</span> <span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="n">years_of_birth</span><span class="p">]</span></code></pre>
+</figure>
+<p>The second line here - the line with<span> </span><code class="highlighter-rouge">ages</code><span> </span>is a<span> </span><em>list comprehension.</em></p>
+<p>It accomplishes the same thing as the first code sample - at the end, the<span> </span><code class="highlighter-rouge">ages</code><span> </span>variable has a list containing<span> </span><code class="highlighter-rouge">[24, 23, 24, 24, 22, 23]</code>, the ages corresponding to all the birthdates.</p>
+<p>The idea of the list comprehension is to condense the for loop and the list appending into one simple line. Notice that the for loop just shifted to the end of the list comprehension, and the part before the<span> </span><code class="highlighter-rouge">for</code><span> </span>keyword is the thing to append to the end of the new list.</p>
+<p>You can also embed<span> </span><code class="highlighter-rouge">if</code><span> </span>statements into the list comprehension - check out<span> </span><a href="https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions">this reference</a><span> </span>to help you out. There are many examples and a better explanation than I can ever give.</p>
+<p><strong>Happy coding!</strong></p><br />PCH 2 - Operational Procedures Electrostatic Discharge (操作程序 靜電放電) P.24 << <a href='PCH 2 - Operational Procedures Electrostatic Discharge (操作程序 靜電放電) P.24.html'>Previous</a> </div>
         
     <!-- footer -->
       <div class="container">
