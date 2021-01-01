@@ -1,0 +1,753 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>40923105 cp2020</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">40923105 cp2020</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li class='has-children'><a href='About.html'>About</a><ul class='dropdown'><li><a href='Develop.html'>Develop</a></li></ul><li><a href='website.html'>website</a><li class='has-children'><a href='H1.html'>H1</a><ul class='dropdown'><li><a href='PCH 1 - External Components of the Desktop System Unit (台式機系統單元的外部組件) P.13.html'>PCH 1 - External Components of the Desktop System Unit (台式機系統單元的外部組件) P.13</a><li><a href='PCH 1 - Connections Between Common Peripherals and Standard Ports(通用外圍設備和準端口之間的連接) P.14.html'>PCH 1 - Connections Between Common Peripherals and Standard Ports(通用外圍設備和準端口之間的連接) P.14</a><li><a href='PCH 1 -USB AND PS 2 (USB和PS 2) P.15.html'>PCH 1 -USB AND PS 2 (USB和PS 2) P.15</a><li><a href='PCH 1 - SCSI and FireWire (SCSI和FireWire) P.16.html'>PCH 1 - SCSI and FireWire (SCSI和FireWire) P.16</a><li><a href='PCH 1 - Serial and Parallel Ports (串行和並行端口) P.17.html'>PCH 1 - Serial and Parallel Ports (串行和並行端口) P.17</a><li><a href='PCH 2 - Procedures and Safety (程序與安全) P.18.html'>PCH 2 - Procedures and Safety (程序與安全) P.18</a><li><a href='PCH 2 - Introduction (簡介) P.19.html'>PCH 2 - Introduction (簡介) P.19</a><li><a href='PCH 2 - Operational Procedures Electrical Safety (操作程序 電氣安全) P.20.html'>PCH 2 - Operational Procedures Electrical Safety (操作程序 電氣安全) P.20</a><li><a href='PCH 2 - Power Supplies (電源) P.21.html'>PCH 2 - Power Supplies (電源) P.21</a><li><a href='PCH 2 - Power Variation (功率變化) P.22.html'>PCH 2 - Power Variation (功率變化) P.22</a><li><a href='PCH 2 - Protecting People and Property (保護人員和財產) P.23.html'>PCH 2 - Protecting People and Property (保護人員和財產) P.23</a><li><a href='PCH 2 - Operational Procedures Electrostatic Discharge (操作程序 靜電放電) P.24.html'>PCH 2 - Operational Procedures Electrostatic Discharge (操作程序 靜電放電) P.24</a></li></ul><li class='has-children'><a href='H3.html'>H3</a><ul class='dropdown'><li><a href='7 - List Comperhensions 清單理解.html'>7 - List Comperhensions 清單理解</a><li><a href='8 - Rock Paper Scissors 剪刀石頭布.html'>8 - Rock Paper Scissors 剪刀石頭布</a><li><a href='9 - Guessing Gmae One 猜遊戲一.html'>9 - Guessing Gmae One 猜遊戲一</a><li><a href='7 - List Comprehensions Solutions 清單理解解決方案.html'>7 - List Comprehensions Solutions 清單理解解決方案</a><li><a href='8 - Rock Paper Scissors Solutions 剪刀石頭布解決方案.html'>8 - Rock Paper Scissors Solutions 剪刀石頭布解決方案</a><li><a href='9 - Guessing Game One Solutions 猜遊戲一解決方案.html'>9 - Guessing Game One Solutions 猜遊戲一解決方案</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">8 - Rock Paper Scissors Solutions 剪刀石頭布解決方案 << <a href='8 - Rock Paper Scissors Solutions 剪刀石頭布解決方案.html'>Previous</a> <br /><h1>9 - Guessing Game One Solutions 猜遊戲一解決方案</h1>
+<p><strong><a href="https://www.practicepython.org/exercise/2014/04/02/09-guessing-game-one.html">Exercise 9</a></strong></p>
+<p>Generate a random number between 1 and 9 (including 1 and 9). Ask the user to guess the number, then tell them whether they guessed too low, too high, or exactly right. (_Hint: remember to use the user input lessons from the very<span> </span><a href="https://www.practicepython.org/exercise/2014/01/29/01-character-input.html_">first exercise</a></p>
+<p>Extras:</p>
+<ul>
+<li>Keep the game going until the user types “exit”</li>
+<li>Keep track of how many guesses the user has taken, and when the game ends, print this out.</li>
+</ul>
+<p><strong>Sample solution</strong></p>
+<p>Great example of a solution including both extras!</p>
+<div class="gist" id="gist10153508">
+<div class="gist-file">
+<div class="gist-data">
+<div class="js-gist-file-update-container js-task-list-container file-box">
+<div class="file my-2" id="file-guessing_game-py">
+<div class="Box-body p-0 blob-wrapper data type-python" itemprop="text">
+<table border="1" cellspacing="0" class="highlight tab-size js-file-line-container" data-paste-markdown-skip="" data-tab-size="8" style="width: 500px;">
+<tbody>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC1"><span class="pl-k">  1    import</span> <span class="pl-s1">random</span></td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC2">  2</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC3"><span class="pl-s1">  3    number</span> <span class="pl-c1">=</span> <span class="pl-s1">random</span>.<span class="pl-en">randint</span>(<span class="pl-c1">1</span>,<span class="pl-c1">9</span>)</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC4"><span class="pl-s1">  4    guess</span> <span class="pl-c1">=</span> <span class="pl-c1">0</span></td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC5"><span class="pl-s1">  5    count</span> <span class="pl-c1">=</span> <span class="pl-c1">0</span></td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC6">  6</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC7">  7</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC8"><span class="pl-k">  8    while</span> <span class="pl-s1">guess</span> <span class="pl-c1">!=</span> <span class="pl-s1">number</span> <span class="pl-c1">and</span> <span class="pl-s1">guess</span> <span class="pl-c1">!=</span> <span class="pl-s">"exit"</span>:</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC9"><span class="pl-s1">  9    guess</span> <span class="pl-c1">=</span> <span class="pl-en">input</span>(<span class="pl-s">"What's your guess?"</span>)</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC10">10</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC11"><span class="pl-k">11    if</span> <span class="pl-s1">guess</span> <span class="pl-c1">==</span> <span class="pl-s">"exit"</span>:</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC12"><span class="pl-k">12    break</span></td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC13">13</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC14"><span class="pl-s1">14    guess</span> <span class="pl-c1">=</span> <span class="pl-en">int</span>(<span class="pl-s1">guess</span>)</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC15"><span class="pl-s1">15    count</span> <span class="pl-c1">+=</span> <span class="pl-c1">1</span></td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC16">16</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC17"><span class="pl-k">17    if</span> <span class="pl-s1">guess</span> <span class="pl-c1">&lt;</span> <span class="pl-s1">number</span>:</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC18"><span class="pl-en">18    print</span>(<span class="pl-s">"Too low!"</span>)</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC19"><span class="pl-k">19    elif</span> <span class="pl-s1">guess</span> <span class="pl-c1">&gt;</span> <span class="pl-s1">number</span>:</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC20"><span class="pl-en">20    print</span>(<span class="pl-s">"Too high!"</span>)</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC21"><span class="pl-k">21    else</span>:</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC22"><span class="pl-en">22    print</span>(<span class="pl-s">"You got it!"</span>)</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC23"><span class="pl-en">23    print</span>(<span class="pl-s">"And it only took you"</span>,<span class="pl-s1">count</span>,<span class="pl-s">"tries!"</span>)</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line"><span class="pl-en"><a href="https://gist.github.com/JamieMacIver/10153508#file-guessing_game-py">guessing_game.py</a><span> </span>hosted with ❤ by<span> </span><a href="https://github.com/">GitHub</a>    <a href="https://gist.github.com/JamieMacIver/10153508/raw/8f1eb4d52b84314d7ecef92096c6ddd999ae2264/guessing_game.py">view raw</a></span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>And another:</p>
+<div class="gist" id="gist28664224">
+<div class="gist-file">
+<div class="gist-data">
+<div class="js-gist-file-update-container js-task-list-container file-box">
+<div class="file my-2" id="file-practice9-py">
+<div class="Box-body p-0 blob-wrapper data type-python" itemprop="text">
+<table border="1" cellspacing="0" class="highlight tab-size js-file-line-container" data-paste-markdown-skip="" data-tab-size="8" style="width: 500px;">
+<tbody>
+<tr style="height: 14px;">
+<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC1" style="height: 14px;"><span class="pl-k">  1    import</span> <span class="pl-s1">random</span></td>
+</tr>
+<tr style="height: 14px;">
+<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC2" style="height: 14px;">  2</td>
+</tr>
+<tr style="height: 14px;">
+<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC3" style="height: 14px;"><span class="pl-s1">  3    rd</span> <span class="pl-c1">=</span> <span class="pl-s1">random</span>.<span class="pl-en">randint</span>(<span class="pl-c1">1</span>,<span class="pl-c1">9</span>)</td>
+</tr>
+<tr style="height: 14px;">
+<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC4" style="height: 14px;"><span class="pl-s1">  4    guess</span> <span class="pl-c1">=</span> <span class="pl-c1">0</span></td>
+</tr>
+<tr style="height: 14px;">
+<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC5" style="height: 14px;"><span class="pl-s1">  5    c</span> <span class="pl-c1">=</span> <span class="pl-c1">0</span></td>
+</tr>
+<tr style="height: 14px;">
+<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC6" style="height: 14px;"><span class="pl-k">  6    while</span> <span class="pl-s1">guess</span> <span class="pl-c1">!=</span> <span class="pl-s1">rd</span> <span class="pl-c1">and</span> <span class="pl-s1">guess</span> <span class="pl-c1">!=</span> <span class="pl-s">"exit"</span>:</td>
+</tr>
+<tr style="height: 14px;">
+<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC7" style="height: 14px;"><span class="pl-s1">  7    guess</span> <span class="pl-c1">=</span> <span class="pl-en">input</span>(<span class="pl-s">"Enter a guess between 1 to 9"</span>)</td>
+</tr>
+<tr style="height: 14px;">
+<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC8" style="height: 14px;">  8    </td>
+</tr>
+<tr style="height: 14px;">
+<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC9" style="height: 14px;"><span class="pl-k">  9    if</span> <span class="pl-s1">guess</span> <span class="pl-c1">==</span> <span class="pl-s">"exit"</span>:</td>
+</tr>
+<tr style="height: 14px;">
+<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC10" style="height: 14px;"><span class="pl-k">10    break</span></td>
+</tr>
+<tr style="height: 14px;">
+<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC11" style="height: 14px;">11</td>
+</tr>
+<tr style="height: 14px;">
+<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC12" style="height: 14px;"><span class="pl-s1">12    guess</span> <span class="pl-c1">=</span> <span class="pl-en">int</span>(<span class="pl-s1">guess</span>)</td>
+</tr>
+<tr style="height: 14px;">
+<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC13" style="height: 14px;"><span class="pl-s1">13    c</span> <span class="pl-c1">+=</span> <span class="pl-c1">1</span></td>
+</tr>
+<tr style="height: 14px;">
+<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC14" style="height: 14px;">14</td>
+</tr>
+<tr style="height: 14px;">
+<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC15" style="height: 14px;"><span class="pl-k">15    if</span> <span class="pl-s1">guess</span> <span class="pl-c1">&lt;</span> <span class="pl-s1">rd</span>:</td>
+</tr>
+<tr style="height: 14px;">
+<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC16" style="height: 14px;"><span class="pl-en">16    print</span>(<span class="pl-s">"Too low"</span>)</td>
+</tr>
+<tr style="height: 14px;">
+<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC17" style="height: 14px;"><span class="pl-k">17    elif</span> <span class="pl-s1">guess</span> <span class="pl-c1">&gt;</span> <span class="pl-s1">rd</span>:</td>
+</tr>
+<tr style="height: 14px;">
+<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC18" style="height: 14px;"><span class="pl-en">18    print</span>(<span class="pl-s">"Too high"</span>)</td>
+</tr>
+<tr style="height: 14px;">
+<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC19" style="height: 14px;"><span class="pl-k">19    else</span>:</td>
+</tr>
+<tr style="height: 14px;">
+<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC20" style="height: 14px;"><span class="pl-en">20    print</span>(<span class="pl-s">"Right!"</span>)</td>
+</tr>
+<tr style="height: 14px;">
+<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC21" style="height: 14px;"><span class="pl-en">21    print</span>(<span class="pl-s">"You took only"</span>, <span class="pl-s1">c</span>, <span class="pl-s">"tries!"</span>)</td>
+</tr>
+<tr style="height: 14px;">
+<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC22" style="height: 14px;"><span class="pl-en">22    input</span>()</td>
+</tr>
+<tr style="height: 14.775px;">
+<td class="blob-code blob-code-inner js-file-line" style="height: 14.775px;"><span class="pl-en"><a href="https://gist.github.com/avillareal98/9a2b5e5b59880d8ea6f8#file-practice9-py">practice9.py</a><span> </span>hosted with ❤ by<span> </span><a href="https://github.com/">GitHub</a>    <a href="https://gist.github.com/avillareal98/9a2b5e5b59880d8ea6f8/raw/e8caf9c3faa972346fbb1d35ae3ab280a087f97c/practice9.py">view raw</a></span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>And another, with lots of helpful text!</p>
+<div class="gist" id="gist28850575">
+<div class="gist-file">
+<div class="gist-data">
+<div class="js-gist-file-update-container js-task-list-container file-box">
+<div class="file my-2" id="file-09guessinggameone-py">
+<div class="Box-body p-0 blob-wrapper data type-python" itemprop="text">
+<table border="1" cellspacing="0" class="highlight tab-size js-file-line-container" data-paste-markdown-skip="" data-tab-size="8" style="width: 500px;">
+<tbody>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC1"><span class="pl-k">  1    import</span> <span class="pl-s1">random</span></td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC2">  2 </td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC3"><span class="pl-c">  3     # Awroken</span></td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC4">  4 </td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC5"><span class="pl-v">  5    MINIMUM</span> <span class="pl-c1">=</span> <span class="pl-c1">1</span></td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC6"><span class="pl-v">  6    MAXIMUM</span> <span class="pl-c1">=</span> <span class="pl-c1">9</span></td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC7"><span class="pl-v">  7    NUMBER</span> <span class="pl-c1">=</span> <span class="pl-s1">random</span>.<span class="pl-en">randint</span>(<span class="pl-v">MINIMUM</span>, <span class="pl-v">MAXIMUM</span>)</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC8"><span class="pl-v">  8    GUESS</span> <span class="pl-c1">=</span> <span class="pl-c1">None</span></td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC9"><span class="pl-v">  9    ANOTHER</span> <span class="pl-c1">=</span> <span class="pl-c1">None</span></td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC10"><span class="pl-v">10    TRY</span> <span class="pl-c1">=</span> <span class="pl-c1">0</span></td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC11"><span class="pl-v">11    RUNNING</span> <span class="pl-c1">=</span> <span class="pl-c1">True</span></td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC12">12  </td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC13"><span class="pl-k">13    print</span> <span class="pl-s">"Alright..."</span></td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC14">14 </td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC15"><span class="pl-k">15    while</span> <span class="pl-v">RUNNING</span>:</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC16"><span class="pl-v">16    GUESS</span> <span class="pl-c1">=</span> <span class="pl-en">raw_input</span>(<span class="pl-s">"What is your lucky number? "</span>)</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC17"><span class="pl-k">17    if</span> <span class="pl-en">int</span>(<span class="pl-v">GUESS</span>) <span class="pl-c1">&lt;</span> <span class="pl-v">NUMBER</span>:</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC18"><span class="pl-k">18    print</span> <span class="pl-s">"Wrong, too low."</span></td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC19"><span class="pl-k">19    elif</span> <span class="pl-en">int</span>(<span class="pl-v">GUESS</span>) <span class="pl-c1">&gt;</span> <span class="pl-v">NUMBER</span>:</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC20"><span class="pl-k">20     print</span> <span class="pl-s">"Wrong, too high."</span></td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC21"><span class="pl-k">21    elif</span> <span class="pl-v">GUESS</span>.<span class="pl-en">lower</span>() <span class="pl-c1">==</span> <span class="pl-s">"exit"</span>:</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC22"><span class="pl-k">22    print</span> <span class="pl-s">"Better luck next time."</span></td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC23"><span class="pl-k">23    elif</span> <span class="pl-en">int</span>(<span class="pl-v">GUESS</span>) <span class="pl-c1">==</span> <span class="pl-v">NUMBER</span>:</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC24"><span class="pl-k">24    print</span> <span class="pl-s">"Yes, that's the one, %s."</span> <span class="pl-c1">%</span> <span class="pl-en">str</span>(<span class="pl-v">NUMBER</span>)</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC25"><span class="pl-k">25    if</span> <span class="pl-v">TRY</span> <span class="pl-c1">&lt;</span> <span class="pl-c1">2</span>:</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC26"><span class="pl-k">26    print</span> <span class="pl-s">"Impressive, only %s tries."</span> <span class="pl-c1">%</span> <span class="pl-en">str</span>(<span class="pl-v">TRY</span>)</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC27"><span class="pl-k">27    elif</span> <span class="pl-v">TRY</span> <span class="pl-c1">&gt;</span> <span class="pl-c1">2</span> <span class="pl-c1">and</span> <span class="pl-v">TRY</span> <span class="pl-c1">&lt;</span> <span class="pl-c1">10</span>:</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC28"><span class="pl-k">28    print</span> <span class="pl-s">"Pretty good, %s tries."</span> <span class="pl-c1">%</span> <span class="pl-en">str</span>(<span class="pl-v">TRY</span>)</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC29"><span class="pl-k">29    else</span>:</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC30"><span class="pl-k">30    print</span> <span class="pl-s">"Bad, %s tries."</span> <span class="pl-c1">%</span> <span class="pl-en">str</span>(<span class="pl-v">TRY</span>)</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC31"><span class="pl-v">31    RUNNING</span> <span class="pl-c1">=</span> <span class="pl-c1">False</span></td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC32"><span class="pl-v">32    TRY</span> <span class="pl-c1">+=</span> <span class="pl-c1">1</span></td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line"><span class="pl-v"><a href="https://gist.github.com/anonymous/0502baf8a01e3aa53550#file-09guessinggameone-py">09GuessingGameOne.py</a><span> </span>hosted with ❤ by<span> </span><a href="https://github.com/">GitHub</a>    <a href="https://gist.github.com/anonymous/0502baf8a01e3aa53550/raw/c97abf833f6e5c5bd56479fb77ab0ddbe1535f7b/09GuessingGameOne.py">view raw</a></span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="gist-meta"></div>
+</div>
+</div>
+<div id="share"><strong>Share the fun!</strong></div>
+<p></p>
+<p><strong><a href="https://www.practicepython.org/exercise/2014/04/02/09-guessing-game-one.html">練習9</a></strong></p>
+<p><span><span>生成1到9之間的隨機數（包括1到9）。</span><span>讓用戶猜數字，然後告訴他們猜的是太低，太高還是完全正確。</span><span>（_提示：請記住在</span><a href="https://www.practicepython.org/exercise/2014/01/29/01-character-input.html_"><span>第一練習中</span></a><span>使用用戶輸入的課程</span></span><a href="https://www.practicepython.org/exercise/2014/01/29/01-character-input.html_"><span></span></a></p>
+<p><span><span>附加功能：</span></span></p>
+<ul>
+<li><span><span>繼續遊戲，直到用戶鍵入“退出”</span></span></li>
+<li><span><span>跟踪用戶進行了多少猜測，當遊戲結束時，將其打印出來。</span></span></li>
+</ul>
+<p><strong>樣品解決方案</strong></p>
+<p><span><span>一個解決方案的好例子，包括兩個額外功能！</span></span></p>
+<table border="1" cellspacing="0" class="highlight tab-size js-file-line-container" data-paste-markdown-skip="" data-tab-size="8" style="width: 500px;">
+<tbody>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC1"><span class="pl-k">  1    import</span> <span class="pl-s1">random</span></td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC2">  2</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC3"><span class="pl-s1">  3    number</span><span> </span><span class="pl-c1">=</span><span> </span><span class="pl-s1">random</span>.<span class="pl-en">randint</span>(<span class="pl-c1">1</span>,<span class="pl-c1">9</span>)</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC4"><span class="pl-s1">  4    guess</span><span> </span><span class="pl-c1">=</span><span> </span><span class="pl-c1">0</span></td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC5"><span class="pl-s1">  5    count</span><span> </span><span class="pl-c1">=</span><span> </span><span class="pl-c1">0</span></td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC6">  6</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC7">  7</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC8"><span class="pl-k">  8    while</span><span> </span><span class="pl-s1">guess</span><span> </span><span class="pl-c1">!=</span><span> </span><span class="pl-s1">number</span><span> </span><span class="pl-c1">and</span><span> </span><span class="pl-s1">guess</span><span> </span><span class="pl-c1">!=</span><span> </span><span class="pl-s">"exit"</span>:</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC9"><span class="pl-s1">  9    guess</span><span> </span><span class="pl-c1">=</span><span> </span><span class="pl-en">input</span>(<span class="pl-s">"What's your guess?"</span>)</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC10">10</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC11"><span class="pl-k">11    if</span><span> </span><span class="pl-s1">guess</span><span> </span><span class="pl-c1">==</span><span> </span><span class="pl-s">"exit"</span>:</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC12"><span class="pl-k">12    break</span></td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC13">13</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC14"><span class="pl-s1">14    guess</span><span> </span><span class="pl-c1">=</span><span> </span><span class="pl-en">int</span>(<span class="pl-s1">guess</span>)</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC15"><span class="pl-s1">15    count</span><span> </span><span class="pl-c1">+=</span><span> </span><span class="pl-c1">1</span></td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC16">16</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC17"><span class="pl-k">17    if</span><span> </span><span class="pl-s1">guess</span><span> </span><span class="pl-c1">&lt;</span><span> </span><span class="pl-s1">number</span>:</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC18"><span class="pl-en">18    print</span>(<span class="pl-s">"Too low!"</span>)</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC19"><span class="pl-k">19    elif</span><span> </span><span class="pl-s1">guess</span><span> </span><span class="pl-c1">&gt;</span><span> </span><span class="pl-s1">number</span>:</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC20"><span class="pl-en">20    print</span>(<span class="pl-s">"Too high!"</span>)</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC21"><span class="pl-k">21    else</span>:</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC22"><span class="pl-en">22    print</span>(<span class="pl-s">"You got it!"</span>)</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC23"><span class="pl-en">23    print</span>(<span class="pl-s">"And it only took you"</span>,<span class="pl-s1">count</span>,<span class="pl-s">"tries!"</span>)</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line"><span class="pl-en"><a href="https://gist.github.com/JamieMacIver/10153508#file-guessing_game-py">guessing_game.py</a><span> </span>由<span> </span><a href="https://github.com/">GitHub</a> 託管  <span> </span><a href="https://gist.github.com/JamieMacIver/10153508/raw/8f1eb4d52b84314d7ecef92096c6ddd999ae2264/guessing_game.py">查看原始</a></span></td>
+</tr>
+</tbody>
+</table>
+<p><span><span>還有一個：</span></span></p>
+<table border="1" cellspacing="0" class="highlight tab-size js-file-line-container" data-paste-markdown-skip="" data-tab-size="8" style="width: 500px;">
+<tbody>
+<tr style="height: 14px;">
+<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC1" style="height: 14px;"><span class="pl-k">  1    import</span><span> </span><span class="pl-s1">random</span></td>
+</tr>
+<tr style="height: 14px;">
+<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC2" style="height: 14px;">  2</td>
+</tr>
+<tr style="height: 14px;">
+<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC3" style="height: 14px;"><span class="pl-s1">  3    rd</span><span> </span><span class="pl-c1">=</span><span> </span><span class="pl-s1">random</span>.<span class="pl-en">randint</span>(<span class="pl-c1">1</span>,<span class="pl-c1">9</span>)</td>
+</tr>
+<tr style="height: 14px;">
+<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC4" style="height: 14px;"><span class="pl-s1">  4    guess</span><span> </span><span class="pl-c1">=</span><span> </span><span class="pl-c1">0</span></td>
+</tr>
+<tr style="height: 14px;">
+<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC5" style="height: 14px;"><span class="pl-s1">  5    c</span><span> </span><span class="pl-c1">=</span><span> </span><span class="pl-c1">0</span></td>
+</tr>
+<tr style="height: 14px;">
+<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC6" style="height: 14px;"><span class="pl-k">  6    while</span><span> </span><span class="pl-s1">guess</span><span> </span><span class="pl-c1">!=</span><span> </span><span class="pl-s1">rd</span><span> </span><span class="pl-c1">and</span><span> </span><span class="pl-s1">guess</span><span> </span><span class="pl-c1">!=</span><span> </span><span class="pl-s">"exit"</span>:</td>
+</tr>
+<tr style="height: 14px;">
+<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC7" style="height: 14px;"><span class="pl-s1">  7    guess</span><span> </span><span class="pl-c1">=</span><span> </span><span class="pl-en">input</span>(<span class="pl-s">"Enter a guess between 1 to 9"</span>)</td>
+</tr>
+<tr style="height: 14px;">
+<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC8" style="height: 14px;">  8    </td>
+</tr>
+<tr style="height: 14px;">
+<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC9" style="height: 14px;"><span class="pl-k">  9    if</span><span> </span><span class="pl-s1">guess</span><span> </span><span class="pl-c1">==</span><span> </span><span class="pl-s">"exit"</span>:</td>
+</tr>
+<tr style="height: 14px;">
+<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC10" style="height: 14px;"><span class="pl-k">10    break</span></td>
+</tr>
+<tr style="height: 14px;">
+<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC11" style="height: 14px;">11</td>
+</tr>
+<tr style="height: 14px;">
+<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC12" style="height: 14px;"><span class="pl-s1">12    guess</span><span> </span><span class="pl-c1">=</span><span> </span><span class="pl-en">int</span>(<span class="pl-s1">guess</span>)</td>
+</tr>
+<tr style="height: 14px;">
+<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC13" style="height: 14px;"><span class="pl-s1">13    c</span><span> </span><span class="pl-c1">+=</span><span> </span><span class="pl-c1">1</span></td>
+</tr>
+<tr style="height: 14px;">
+<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC14" style="height: 14px;">14</td>
+</tr>
+<tr style="height: 14px;">
+<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC15" style="height: 14px;"><span class="pl-k">15    if</span><span> </span><span class="pl-s1">guess</span><span> </span><span class="pl-c1">&lt;</span><span> </span><span class="pl-s1">rd</span>:</td>
+</tr>
+<tr style="height: 14px;">
+<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC16" style="height: 14px;"><span class="pl-en">16    print</span>(<span class="pl-s">"Too low"</span>)</td>
+</tr>
+<tr style="height: 14px;">
+<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC17" style="height: 14px;"><span class="pl-k">17    elif</span><span> </span><span class="pl-s1">guess</span><span> </span><span class="pl-c1">&gt;</span><span> </span><span class="pl-s1">rd</span>:</td>
+</tr>
+<tr style="height: 14px;">
+<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC18" style="height: 14px;"><span class="pl-en">18    print</span>(<span class="pl-s">"Too high"</span>)</td>
+</tr>
+<tr style="height: 14px;">
+<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC19" style="height: 14px;"><span class="pl-k">19    else</span>:</td>
+</tr>
+<tr style="height: 14px;">
+<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC20" style="height: 14px;"><span class="pl-en">20    print</span>(<span class="pl-s">"Right!"</span>)</td>
+</tr>
+<tr style="height: 14px;">
+<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC21" style="height: 14px;"><span class="pl-en">21    print</span>(<span class="pl-s">"You took only"</span>,<span> </span><span class="pl-s1">c</span>,<span> </span><span class="pl-s">"tries!"</span>)</td>
+</tr>
+<tr style="height: 14px;">
+<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC22" style="height: 14px;"><span class="pl-en">22    input</span>()</td>
+</tr>
+<tr style="height: 14.5749px;">
+<td class="blob-code blob-code-inner js-file-line" style="height: 14.5749px;"><span class="pl-en"><a href="https://gist.github.com/avillareal98/9a2b5e5b59880d8ea6f8#file-practice9-py">practice9.py</a><span> </span>由<span> </span><a href="https://github.com/">GitHub</a> 託管  <span> </span><a href="https://gist.github.com/avillareal98/9a2b5e5b59880d8ea6f8/raw/e8caf9c3faa972346fbb1d35ae3ab280a087f97c/practice9.py">查看原始</a></span></td>
+</tr>
+</tbody>
+</table>
+<p><span><span>還有很多有用的文字！</span></span></p>
+<table border="1" cellspacing="0" class="highlight tab-size js-file-line-container" data-paste-markdown-skip="" data-tab-size="8" style="width: 500px;">
+<tbody>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC1"><span class="pl-k">  1    import</span><span> </span><span class="pl-s1">random</span></td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC2">  2 </td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC3"><span class="pl-c">  3     # Awroken</span></td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC4">  4 </td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC5"><span class="pl-v">  5    MINIMUM</span><span> </span><span class="pl-c1">=</span><span> </span><span class="pl-c1">1</span></td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC6"><span class="pl-v">  6    MAXIMUM</span><span> </span><span class="pl-c1">=</span><span> </span><span class="pl-c1">9</span></td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC7"><span class="pl-v">  7    NUMBER</span><span> </span><span class="pl-c1">=</span><span> </span><span class="pl-s1">random</span>.<span class="pl-en">randint</span>(<span class="pl-v">MINIMUM</span>,<span> </span><span class="pl-v">MAXIMUM</span>)</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC8"><span class="pl-v">  8    GUESS</span><span> </span><span class="pl-c1">=</span><span> </span><span class="pl-c1">None</span></td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC9"><span class="pl-v">  9    ANOTHER</span><span> </span><span class="pl-c1">=</span><span> </span><span class="pl-c1">None</span></td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC10"><span class="pl-v">10    TRY</span><span> </span><span class="pl-c1">=</span><span> </span><span class="pl-c1">0</span></td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC11"><span class="pl-v">11    RUNNING</span><span> </span><span class="pl-c1">=</span><span> </span><span class="pl-c1">True</span></td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC12">12  </td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC13"><span class="pl-k">13    print</span><span> </span><span class="pl-s">"Alright..."</span></td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC14">14 </td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC15"><span class="pl-k">15    while</span><span> </span><span class="pl-v">RUNNING</span>:</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC16"><span class="pl-v">16    GUESS</span><span> </span><span class="pl-c1">=</span><span> </span><span class="pl-en">raw_input</span>(<span class="pl-s">"What is your lucky number? "</span>)</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC17"><span class="pl-k">17    if</span><span> </span><span class="pl-en">int</span>(<span class="pl-v">GUESS</span>)<span> </span><span class="pl-c1">&lt;</span><span> </span><span class="pl-v">NUMBER</span>:</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC18"><span class="pl-k">18    print</span><span> </span><span class="pl-s">"Wrong, too low."</span></td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC19"><span class="pl-k">19    elif</span><span> </span><span class="pl-en">int</span>(<span class="pl-v">GUESS</span>)<span> </span><span class="pl-c1">&gt;</span><span> </span><span class="pl-v">NUMBER</span>:</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC20"><span class="pl-k">20     print</span><span> </span><span class="pl-s">"Wrong, too high."</span></td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC21"><span class="pl-k">21    elif</span><span> </span><span class="pl-v">GUESS</span>.<span class="pl-en">lower</span>()<span> </span><span class="pl-c1">==</span><span> </span><span class="pl-s">"exit"</span>:</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC22"><span class="pl-k">22    print</span><span> </span><span class="pl-s">"Better luck next time."</span></td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC23"><span class="pl-k">23    elif</span><span> </span><span class="pl-en">int</span>(<span class="pl-v">GUESS</span>)<span> </span><span class="pl-c1">==</span><span> </span><span class="pl-v">NUMBER</span>:</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC24"><span class="pl-k">24    print</span><span> </span><span class="pl-s">"Yes, that's the one, %s."</span><span> </span><span class="pl-c1">%</span><span> </span><span class="pl-en">str</span>(<span class="pl-v">NUMBER</span>)</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC25"><span class="pl-k">25    if</span><span> </span><span class="pl-v">TRY</span><span> </span><span class="pl-c1">&lt;</span><span> </span><span class="pl-c1">2</span>:</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC26"><span class="pl-k">26    print</span><span> </span><span class="pl-s">"Impressive, only %s tries."</span><span> </span><span class="pl-c1">%</span><span> </span><span class="pl-en">str</span>(<span class="pl-v">TRY</span>)</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC27"><span class="pl-k">27    elif</span><span> </span><span class="pl-v">TRY</span><span> </span><span class="pl-c1">&gt;</span><span> </span><span class="pl-c1">2</span><span> </span><span class="pl-c1">and</span><span> </span><span class="pl-v">TRY</span><span> </span><span class="pl-c1">&lt;</span><span> </span><span class="pl-c1">10</span>:</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC28"><span class="pl-k">28    print</span><span> </span><span class="pl-s">"Pretty good, %s tries."</span><span> </span><span class="pl-c1">%</span><span> </span><span class="pl-en">str</span>(<span class="pl-v">TRY</span>)</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC29"><span class="pl-k">29    else</span>:</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC30"><span class="pl-k">30    print</span><span> </span><span class="pl-s">"Bad, %s tries."</span><span> </span><span class="pl-c1">%</span><span> </span><span class="pl-en">str</span>(<span class="pl-v">TRY</span>)</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC31"><span class="pl-v">31    RUNNING</span><span> </span><span class="pl-c1">=</span><span> </span><span class="pl-c1">False</span></td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC32"><span class="pl-v">32    TRY</span><span> </span><span class="pl-c1">+=</span><span> </span><span class="pl-c1">1</span></td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line"><span class="pl-v"><a href="https://gist.github.com/anonymous/0502baf8a01e3aa53550#file-09guessinggameone-py">09GuessingGameOne.py</a><span> </span>由<span> </span><a href="https://github.com/">GitHub</a> 託管  <span> </span><a href="https://gist.github.com/anonymous/0502baf8a01e3aa53550/raw/c97abf833f6e5c5bd56479fb77ab0ddbe1535f7b/09GuessingGameOne.py">查看原始</a></span></td>
+</tr>
+</tbody>
+</table>
+<p id="share"><strong>分享樂趣！</strong></p>
+<p></p><br />8 - Rock Paper Scissors Solutions 剪刀石頭布解決方案 << <a href='8 - Rock Paper Scissors Solutions 剪刀石頭布解決方案.html'>Previous</a> </div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
