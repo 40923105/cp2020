@@ -700,7 +700,9 @@
 <td class="blob-code blob-code-inner js-file-line" id="file-gistfile1-py-LC1" style="width: 486.4px; height: 25px;">  1     b = [element for element in a if element % 2 == 0]</td>
 </tr>
 <tr style="height: 4.77499px;">
-<td class="blob-code blob-code-inner js-file-line" style="width: 486.4px; height: 4.77499px;"><span class="pl-s1"><span>  <a href="https://gist.github.com/anonymous/9779343#file-gistfile1-py">gistfile1.py</a></span><span> </span>hosted with ❤ by<span> </span><a href="https://github.com/">GitHub</a>                                <a href="https://gist.github.com/anonymous/9779343/raw/f775b4bd8163439e95cf1dc2d37e274d9a62d696/gistfile1.py">view raw</a></span></td>
+<td class="blob-code blob-code-inner js-file-line" style="width: 486.4px; height: 4.77499px;">
+<div><span class="pl-s1"><span>  <a href="https://gist.github.com/anonymous/9779343#file-gistfile1-py">gistfile1.py</a></span><span> </span>hosted with ❤ by<span> </span><a href="https://github.com/">GitHub</a>                                <a href="https://gist.github.com/anonymous/9779343/raw/f775b4bd8163439e95cf1dc2d37e274d9a62d696/gistfile1.py">view raw</a></span></div>
+</td>
 </tr>
 </tbody>
 </table>
@@ -733,14 +735,16 @@
 <tr style="height: 14px;">
 <td class="blob-code blob-code-inner js-file-line" id="file-list_comprehension-py-LC1" style="width: 484.4px; height: 14px;">
 <div>   1    import random</div>
-<div>   2<br/>   3    numlist = [] list_length = random.randint(5,15)</div>
-<div>   4    </div>
-<div>   5<br/>   6    while len(numlist) &lt; list_length: numlist.append(random.randint(1,75))</div>
-<div>   7 </div>
-<div>   8<br/>   9    evenlist = [number for number in numlist if number % 2 == 0]</div>
+<div>   2<br/>   3    numlist = []</div>
+<div>   4    list_length = random.randint(5,15)</div>
+<div>   5<br/>   6    </div>
+<div>   7    while len(numlist) &lt; list_length: </div>
+<div>   8          numlist.append(random.randint(1,75))<br/>   9    </div>
 <div> 10</div>
-<div> 11    print(numlist)</div>
-<div> 12    print(evenlist)</div>
+<div> 11    evenlist = [number for number in numlist if number % 2 == 0]</div>
+<div> 12</div>
+<div> 13    print(numlist)</div>
+<div> 14    print(evenlist)</div>
 </td>
 </tr>
 <tr style="height: 15.175px;">
@@ -792,14 +796,16 @@
 <tr>
 <td class="blob-code blob-code-inner js-file-line" id="file-list_comprehension-py-LC1" style="width: 484.4px;">
 <div>   1    import random</div>
-<div>   2<br/>   3    numlist = [] list_length = random.randint(5,15)</div>
-<div>   4    </div>
-<div>   5<br/>   6    while len(numlist) &lt; list_length: numlist.append(random.randint(1,75))</div>
-<div>   7 </div>
-<div>   8<br/>   9    evenlist = [number for number in numlist if number % 2 == 0]</div>
+<div>   2<br/>   3    numlist = [] </div>
+<div>   4    list_length = random.randint(5,15)</div>
+<div>   5<br/>   6    </div>
+<div>   7    while len(numlist) &lt; list_length: </div>
+<div>   8          numlist.append(random.randint(1,75))<br/>   9   </div>
 <div> 10</div>
-<div> 11    print(numlist)</div>
-<div> 12    print(evenlist)</div>
+<div> 11    evenlist = [number for number in numlist if number % 2 == 0]</div>
+<div> 12   </div>
+<div> 13    print(numlist)</div>
+<div> 14    print(evenlist)</div>
 </td>
 </tr>
 <tr>
