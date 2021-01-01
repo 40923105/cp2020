@@ -694,10 +694,12 @@
 <p>Let’s say I give you a list saved in a variable:<span> </span><code class="highlighter-rouge">a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]</code>. Write one line of Python that takes this list<span> </span><code class="highlighter-rouge">a</code><span> </span>and makes a new list that has only the even elements of this list in it.</p>
 <p><strong>Sample solutions</strong></p>
 <p>For the meat of the solution, check this out:</p>
-<table border="1" cellspacing="0" class="highlight tab-size js-file-line-container" data-paste-markdown-skip="" data-tab-size="8" style="width: 515px; border-color: #d1cfcf;">
+<table border="1" cellspacing="0" class="highlight tab-size js-file-line-container" data-paste-markdown-skip="" data-tab-size="8" style="width: 550px; border-color: #d1cfcf;">
 <tbody>
 <tr style="height: 25px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-gistfile1-py-LC1" style="width: 486.4px; height: 25px;">  1     b = [element for element in a if element % 2 == 0]</td>
+<td class="blob-code blob-code-inner js-file-line" id="file-gistfile1-py-LC1" style="width: 486.4px; height: 25px;">
+<pre>   1    b = [element for element in a if element % 2 == 0]</pre>
+</td>
 </tr>
 <tr style="height: 4.77499px;">
 <td class="blob-code blob-code-inner js-file-line" style="width: 486.4px; height: 4.77499px;">
@@ -707,16 +709,16 @@
 </tbody>
 </table>
 <p>And for a “complete” solution, look at this:</p>
-<table border="1" cellspacing="0" class="highlight tab-size js-file-line-container" data-paste-markdown-skip="" data-tab-size="8" style="width: 515px; border-color: #d1cfcf;">
+<table border="1" cellspacing="0" class="highlight tab-size js-file-line-container" data-paste-markdown-skip="" data-tab-size="8" style="width: 550px; border-color: #d1cfcf;">
 <tbody>
 <tr style="height: 14px;">
 <td class="blob-code blob-code-inner js-file-line" id="file-exercise-7-list-comprehension-LC1" style="width: 490.4px; height: 14px;">
-<div>  1    __author__ = 'jhunt'</div>
-<div>  2</div>
-<div>  3    a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]</div>
-<div>  4    b = [number for number in a if number % 2 == 0]</div>
-<div>  5</div>
-<div>  6    print(b)</div>
+<pre>   1    __author__ = 'jhunt'
+   2    
+   3    a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+   4    b = [number for number in a if number % 2 == 0]
+   5
+   6    print(b)</pre>
 </td>
 </tr>
 <tr style="height: 12px;">
@@ -730,42 +732,47 @@
 </div>
 </div>
 <p>For a solution that uses the<span> </span><code class="highlighter-rouge">random</code><span> </span>library to generate test lists, check this out:</p>
-<table border="1" cellspacing="0" class="highlight tab-size js-file-line-container" data-paste-markdown-skip="" data-tab-size="8" style="width: 515px; border-color: #d1cfcf;">
+<table border="1" cellspacing="0" class="highlight tab-size js-file-line-container" data-paste-markdown-skip="" data-tab-size="8" style="width: 550px; border-color: #d1cfcf;">
 <tbody>
 <tr style="height: 14px;">
 <td class="blob-code blob-code-inner js-file-line" id="file-list_comprehension-py-LC1" style="width: 484.4px; height: 14px;">
-<div>   1    import random</div>
-<div>   2<br/>   3    numlist = []</div>
-<div>   4    list_length = random.randint(5,15)</div>
-<div>   5<br/>   6    </div>
-<div>   7    while len(numlist) &lt; list_length: </div>
-<div>   8          numlist.append(random.randint(1,75))<br/>   9    </div>
-<div> 10</div>
-<div> 11    evenlist = [number for number in numlist if number % 2 == 0]</div>
-<div> 12</div>
-<div> 13    print(numlist)</div>
-<div> 14    print(evenlist)</div>
+<pre>   1    import random
+   2
+   3    numlist = []
+<span>   4    </span>list_length = random.randint(5,15)
+<span>   5    </span>
+<span>   6    </span>
+<span>   7    </span>while len(numlist) &lt; list_length:
+<span>   8    </span>    numlist.append(random.randint(1,75))
+<span>   9    </span>    
+<span>  10    </span>
+<span>  11    </span>evenlist = [number for number in numlist if number % 2 == 0] 
+<span>  12    </span>
+<span>  13    </span>print(numlist)
+<span>  14    </span>print(evenlist)</pre>
 </td>
 </tr>
 <tr style="height: 15.175px;">
-<td class="blob-code blob-code-inner js-file-line" style="width: 484.4px; height: 15.175px;"> <a href="https://gist.github.com/JamieMacIver/9782963#file-list_comprehension-py">list_comprehension.py</a><span> </span>hosted with ❤ by<span> </span><a href="https://github.com/">GitHub</a>     <a href="https://gist.github.com/JamieMacIver/9782963/raw/38d3687da976010a1d0892897af7ed162c5aaf51/list_comprehension.py">view raw</a> </td>
+<td class="blob-code blob-code-inner js-file-line" style="width: 484.4px; height: 15.175px;"> <a href="https://gist.github.com/JamieMacIver/9782963#file-list_comprehension-py">list_comprehension.py</a><span> </span>hosted with ❤ by<span> </span><a href="https://github.com/">GitHub</a>     <a href="https://gist.github.com/JamieMacIver/9782963/raw/38d3687da976010a1d0892897af7ed162c5aaf51/list_comprehension.py">view raw</a></td>
 </tr>
 </tbody>
 </table>
 <div class="gist" id="gist9782963">
 <div class="gist-file">
 <p class="gist-meta"><strong>Share the fun!</strong></p>
-<div class="gist-meta"></div>
+<div class="gist-meta">   1    </div>
 </div>
 </div>
 <p><strong><a href="https://www.practicepython.org/exercise/2014/03/19/07-list-comprehensions.html">練習7</a></strong></p>
 <p><span><span>假設我給您一個保存在變量中的列表：</span></span><code class="highlighter-rouge">a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]</code><span><span>。</span><span>編寫一行Python來獲取此列表，</span></span><code class="highlighter-rouge">a</code><span><span>並創建一個僅包含該列表偶數元素的新列表。</span></span></p>
 <p><strong>樣品解決方案</strong></p>
 <p><span><span>對於解決方案的實質，請檢查以下內容：</span></span></p>
-<table border="1" cellspacing="0" class="highlight tab-size js-file-line-container" data-paste-markdown-skip="" data-tab-size="8" style="width: 515px; border-color: #d1cfcf; height: 50px;">
+<table border="1" cellspacing="0" class="highlight tab-size js-file-line-container" data-paste-markdown-skip="" data-tab-size="8" style="width: 550px; border-color: #d1cfcf; height: 50px;">
 <tbody>
 <tr style="height: 24px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-gistfile1-py-LC1" style="width: 491.8px; height: 24px;"><span>  1     b = [element for element in a if element % 2 == 0]</span></td>
+<td class="blob-code blob-code-inner js-file-line" id="file-gistfile1-py-LC1" style="width: 491.8px; height: 24px;">
+<pre>   1    b = [element for element in a if element % 2 == 0]</pre>
+</td>
 </tr>
 <tr style="height: 24.375px;">
 <td class="blob-code blob-code-inner js-file-line" style="width: 491.8px; height: 24.375px;"><span class="pl-s1"><span>  <a href="https://gist.github.com/anonymous/9779343#file-gistfile1-py">gistfile1.py</a></span><span> 由</span><span> </span><a href="https://github.com/">GitHub</a> 託管                                   <a href="https://gist.github.com/anonymous/9779343/raw/f775b4bd8163439e95cf1dc2d37e274d9a62d696/gistfile1.py">查看原始</a></span></td>
@@ -773,16 +780,16 @@
 </tbody>
 </table>
 <p><span><span>對於“完整”的解決方案，請看以下內容：</span></span></p>
-<table border="1" cellspacing="0" class="highlight tab-size js-file-line-container" data-paste-markdown-skip="" data-tab-size="8" style="width: 515px; border-color: #d1cfcf;">
+<table border="1" cellspacing="0" class="highlight tab-size js-file-line-container" data-paste-markdown-skip="" data-tab-size="8" style="width: 550px; border-color: #d1cfcf;">
 <tbody>
 <tr style="height: 14px;">
 <td class="blob-code blob-code-inner js-file-line" id="file-exercise-7-list-comprehension-LC1" style="width: 490.4px; height: 14px;">
-<div>  1    __author__ = 'jhunt'</div>
-<div>  2</div>
-<div>  3    a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]</div>
-<div>  4    b = [number for number in a if number % 2 == 0]</div>
-<div>  5</div>
-<div>  6    print(b)</div>
+<pre>   1    __author__ = 'jhunt'
+   2    
+   3    a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+   4    b = [number for number in a if number % 2 == 0]
+   5
+   6    print(b)</pre>
 </td>
 </tr>
 <tr style="height: 12.375px;">
@@ -791,21 +798,24 @@
 </tbody>
 </table>
 <p><span><span>對於使用該</span></span><code class="highlighter-rouge">random</code><span><span>庫生成測試列表</span><span>的解決方案</span><span>，請檢查以下內容：</span></span></p>
-<table border="1" cellspacing="0" class="highlight tab-size js-file-line-container" data-paste-markdown-skip="" data-tab-size="8" style="width: 515px; border-color: #d1cfcf;">
+<table border="1" cellspacing="0" class="highlight tab-size js-file-line-container" data-paste-markdown-skip="" data-tab-size="8" style="width: 550px; border-color: #d1cfcf;">
 <tbody>
 <tr>
 <td class="blob-code blob-code-inner js-file-line" id="file-list_comprehension-py-LC1" style="width: 484.4px;">
-<div>   1    import random</div>
-<div>   2<br/>   3    numlist = [] </div>
-<div>   4    list_length = random.randint(5,15)</div>
-<div>   5<br/>   6    </div>
-<div>   7    while len(numlist) &lt; list_length: </div>
-<div>   8          numlist.append(random.randint(1,75))<br/>   9   </div>
-<div> 10</div>
-<div> 11    evenlist = [number for number in numlist if number % 2 == 0]</div>
-<div> 12   </div>
-<div> 13    print(numlist)</div>
-<div> 14    print(evenlist)</div>
+<pre>   1    import random
+   2
+   3    numlist = []
+<span>   4    </span>list_length = random.randint(5,15)
+<span>   5    </span>
+<span>   6    </span>
+<span>   7    </span>while len(numlist) &lt; list_length:
+<span>   8    </span>    numlist.append(random.randint(1,75))
+<span>   9    </span>    
+<span>  10    </span>
+<span>  11    </span>evenlist = [number for number in numlist if number % 2 == 0] 
+<span>  12    </span>
+<span>  13    </span>print(numlist)
+<span>  14    </span>print(evenlist)</pre>
 </td>
 </tr>
 <tr>
