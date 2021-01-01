@@ -1,0 +1,318 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>40923105 cp2020</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">40923105 cp2020</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li class='has-children'><a href='About.html'>About</a><ul class='dropdown'><li><a href='Develop.html'>Develop</a></li></ul><li><a href='website.html'>website</a><li class='has-children'><a href='H1.html'>H1</a><ul class='dropdown'><li><a href='PCH 1 - External Components of the Desktop System Unit (台式機系統單元的外部組件) P.13.html'>PCH 1 - External Components of the Desktop System Unit (台式機系統單元的外部組件) P.13</a><li><a href='PCH 1 - Connections Between Common Peripherals and Standard Ports(通用外圍設備和準端口之間的連接) P.14.html'>PCH 1 - Connections Between Common Peripherals and Standard Ports(通用外圍設備和準端口之間的連接) P.14</a><li><a href='PCH 1 -USB AND PS 2 (USB和PS 2) P.15.html'>PCH 1 -USB AND PS 2 (USB和PS 2) P.15</a><li><a href='PCH 1 - SCSI and FireWire (SCSI和FireWire) P.16.html'>PCH 1 - SCSI and FireWire (SCSI和FireWire) P.16</a><li><a href='PCH 1 - Serial and Parallel Ports (串行和並行端口) P.17.html'>PCH 1 - Serial and Parallel Ports (串行和並行端口) P.17</a><li><a href='PCH 2 - Procedures and Safety (程序與安全) P.18.html'>PCH 2 - Procedures and Safety (程序與安全) P.18</a><li><a href='PCH 2 - Introduction (簡介) P.19.html'>PCH 2 - Introduction (簡介) P.19</a><li><a href='PCH 2 - Operational Procedures Electrical Safety (操作程序 電氣安全) P.20.html'>PCH 2 - Operational Procedures Electrical Safety (操作程序 電氣安全) P.20</a><li><a href='PCH 2 - Power Supplies (電源) P.21.html'>PCH 2 - Power Supplies (電源) P.21</a><li><a href='PCH 2 - Power Variation (功率變化) P.22.html'>PCH 2 - Power Variation (功率變化) P.22</a><li><a href='PCH 2 - Protecting People and Property (保護人員和財產) P.23.html'>PCH 2 - Protecting People and Property (保護人員和財產) P.23</a><li><a href='PCH 2 - Operational Procedures Electrostatic Discharge (操作程序 靜電放電) P.24.html'>PCH 2 - Operational Procedures Electrostatic Discharge (操作程序 靜電放電) P.24</a></li></ul><li class='has-children'><a href='H3.html'>H3</a><ul class='dropdown'><li><a href='7 - List Comperhensions 清單理解.html'>7 - List Comperhensions 清單理解</a><li><a href='8 - Rock Paper Scissors 剪刀石頭布.html'>8 - Rock Paper Scissors 剪刀石頭布</a><li><a href='9 - Guessing Gmae One.html'>9 - Guessing Gmae One</a><li><a href='7 - List Comprehensions Solutions.html'>7 - List Comprehensions Solutions</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">7 - List Comperhensions 清單理解 << <a href='7 - List Comperhensions 清單理解.html'>Previous</a> <a href='9 - Guessing Gmae One.html'>Next</a> >> 9 - Guessing Gmae One<br /><h1>8 - Rock Paper Scissors 剪刀石頭布</h1>
+<p><strong>Exercise 8 (and <a href="https://www.practicepython.org/solution/2014/04/02/08-rock-paper-scissors-solutions.html">Solution</a>)</strong></p>
+<p>Make a two-player Rock-Paper-Scissors game. (<em>Hint: Ask for player plays (using<span> </span><code class="highlighter-rouge">input</code>), compare them, print out a message of congratulations to the winner, and ask if the players want to start a new game</em>)</p>
+<p>Remember the rules:</p>
+<ul>
+<li>Rock beats scissors</li>
+<li>Scissors beats paper</li>
+<li>Paper beats rock</li>
+</ul>
+<p><strong>Discussion</strong></p>
+<p>Concepts for this week:</p>
+<ul>
+<li>While loops</li>
+<li>Infinite loops</li>
+<li>Break statements</li>
+</ul>
+<p><strong>While loops</strong></p>
+<p>We have already discussed<span> </span><code class="highlighter-rouge">for</code><span> </span>loops, or loops that look sequentially (one by one) at elements in a list. There is a second type of loop that works in a slightly different way called a<span> </span><code class="highlighter-rouge">while</code><span> </span>loop.</p>
+<p>The idea is simple: while a certain condition is<span> </span><code class="highlighter-rouge">True</code>, keep doing something. For example:</p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python">  <span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
+  <span class="k">while</span> <span class="p">(</span><span class="n">a</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+    <span class="n">a</span> <span class="o">-=</span> <span class="mi">1</span></code></pre>
+</figure>
+<p>The output of this code segment is:</p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python">  <span class="mi">5</span>
+  <span class="mi">4</span>
+  <span class="mi">3</span>
+  <span class="mi">2</span>
+  <span class="mi">1</span></code></pre>
+</figure>
+<p>A particularly useful way to use<span> </span><code class="highlighter-rouge">while</code><span> </span>loops is checking user input for correctness. For example:</p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python">  <span class="n">quit</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">'Type "enter" to quit:'</span> <span class="p">)</span>
+  <span class="k">while</span> <span class="n">quit</span> <span class="o">!=</span> <span class="s">"enter"</span><span class="p">:</span>
+    <span class="n">quit</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">'Type "enter" to quit:'</span> <span class="p">)</span></code></pre>
+</figure>
+<p>The uses for this are infinite, and can (and should!) be combined with conditionals to yield the most efficient results.</p>
+<p><strong>Infinite loops</strong></p>
+<p>An infinite loop is a loop that never stops. This means that the condition in the beginning of the while loop will always be true.</p>
+<p>For example:</p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python">  <span class="n">i</span> <span class="o">=</span> <span class="mi">5</span>
+  <span class="k">while</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Inside the loop"</span><span class="p">)</span></code></pre>
+</figure>
+<p>What will happen is the loop will print out the phrase “Inside the loop” forever and ever. If you are running your computer, you will have to “kill the program” to stop it. Each operating system has a different way of “killing a program” to get out of an infinite loop.</p>
+<p>On Linux: in the terminal, type “CTRL-C” to kill the program that is currently running in the terminal. If you are using the IDLE Python IDE, then you must press “CTRL-D” to exit your running program. When in doubt, do a Google search before you start programming!</p>
+<p>On Windows: type “CTRL-ALT-DEL” and open the task manager to kill the program.</p>
+<p>On Mac: right-click on the task, and kill the program that is running forever.</p>
+<p>If you find yourself in an infinite loop, your program will never end.</p>
+<p><strong>Break statements</strong></p>
+<p>A<span> </span><code class="highlighter-rouge">break</code><span> </span>statement stops the execution of a loop before the original condition is met. While the use of a<span> </span><code class="highlighter-rouge">break</code><span> </span>statement will often start an argument about good coding practices, sometimes it is useful.</p>
+<p>For example:</p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python">  <span class="k">while</span> <span class="bp">True</span><span class="p">:</span> 
+    <span class="n">usr_command</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter your command: "</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">usr_command</span> <span class="o">==</span> <span class="s">"quit"</span><span class="p">:</span>
+      <span class="k">break</span>
+    <span class="k">else</span><span class="p">:</span> 
+      <span class="k">print</span><span class="p">(</span><span class="s">"You typed "</span> <span class="o">+</span> <span class="n">usr_command</span><span class="p">)</span></code></pre>
+</figure>
+<p>In this case, the<span> </span><code class="highlighter-rouge">break</code><span> </span>statement is used to break off the “infinite while loop” that we have constructed with the<span> </span><code class="highlighter-rouge">while True</code><span> </span>statement.</p>
+<p><strong>Happy coding!</strong></p>
+<p></p>
+<div><strong>練習8（和<a href="https://www.practicepython.org/solution/2014/04/02/08-rock-paper-scissors-solutions.html">解決方案</a>）</strong><br/><i></i></div>
+<p><span><span>製作兩人石頭剪刀布遊戲。</span><span>（</span></span><em><span><span>提示：（使用</span></span><code class="highlighter-rouge">input</code><span><span>）</span><span>詢問玩家玩法</span><span>，進行比較，打印出對獲勝者表示祝賀的消息，並詢問玩家是否要開始新遊戲</span></span></em><span><span>）</span></span></p>
+<p><span><span>記住規則：</span></span></p>
+<ul>
+<li><span><span>搖滾剪刀</span></span></li>
+<li><span><span>剪刀打紙</span></span></li>
+<li><span><span>紙打石頭</span></span></li>
+</ul>
+<p><strong>討論區</strong></p>
+<p><span><span>本週的概念：</span></span></p>
+<ul>
+<li><span><span>While循環</span></span></li>
+<li><span><span>無限循環</span></span></li>
+<li><span><span>中斷聲明</span></span></li>
+</ul>
+<p><strong>While循環</strong></p>
+<p><span><span>我們已經討論過</span></span><code class="highlighter-rouge">for</code><span><span>循環，或循環（逐一）查看列表中的元素的循環。</span><span>還有第二種類型的循環，其工作方式略有不同，稱為</span></span><code class="highlighter-rouge">while</code><span><span>循環。</span></span></p>
+<p><span><span>這個想法很簡單：在一定條件下</span></span><code class="highlighter-rouge">True</code><span><span>，繼續做某事。</span><span>例如：</span></span></p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python">  <span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
+  <span class="k">while</span> <span class="p">(</span><span class="n">a</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+    <span class="n">a</span> <span class="o">-=</span> <span class="mi">1</span></code></pre>
+</figure>
+<p><span><span>該代碼段的輸出為：</span></span></p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python">  <span class="mi">5</span>
+  <span class="mi">4</span>
+  <span class="mi">3</span>
+  <span class="mi">2</span>
+  <span class="mi">1</span></code></pre>
+</figure>
+<p><span><span>使用</span></span><code class="highlighter-rouge">while</code><span><span>循環的</span><span>一種特別有用的方法</span><span>是檢查用戶輸入的正確性。</span><span>例如：</span></span></p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python">  <span class="n">quit</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">'Type "enter" to quit:'</span> <span class="p">)</span>
+  <span class="k">while</span> <span class="n">quit</span> <span class="o">!=</span> <span class="s">"enter"</span><span class="p">:</span>
+    <span class="n">quit</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">'Type "enter" to quit:'</span> <span class="p">)</span></code></pre>
+</figure>
+<p><span><span>此方法的用途是無限的，並且可以（並且應該！）與條件條件結合使用以產生最有效的結果。</span></span></p>
+<p><strong>無限循環</strong></p>
+<p><span><span>無限循環是永不停止的循環。</span><span>這意味著while循環開始時的條件將始終為true。</span></span></p>
+<p><span><span>例如：</span></span></p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python">  <span class="n">i</span> <span class="o">=</span> <span class="mi">5</span>
+  <span class="k">while</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Inside the loop"</span><span class="p">)</span></code></pre>
+</figure>
+<p><span><span>將會發生的是，循環將永遠打印出短語“ Inside the loop”。</span><span>如果您正在運行計算機，則必須“殺死該程序”以將其停止。</span><span>每個操作系統都有不同的“殺死程序”以擺脫無限循環的方式。</span></span></p>
+<p><span><span>在Linux上：在終端中，鍵入“ CTRL-C”以終止終端中當前正在運行的程序。</span><span>如果使用的是IDLE Python IDE，則必須按“ CTRL-D”退出正在運行的程序。</span><span>如有疑問，請在開始編程之前進行Google搜索！</span></span></p>
+<p><span><span>在Windows上：鍵入“ CTRL-ALT-DEL”並打開任務管理器以終止程序。</span></span></p>
+<p><span><span>在Mac上：右鍵單擊該任務，然後終止永久運行的程序。</span></span></p>
+<p><span><span>如果發現自己陷入無限循環，則程序將永遠不會結束。</span></span></p>
+<p><strong>中斷聲明</strong></p>
+<p><span></span><code class="highlighter-rouge">break</code><span><span>在滿足原始條件之前，</span><span>一條</span><span>語句將停止執行循環。</span><span>儘管使用</span></span><code class="highlighter-rouge">break</code><span><span>語句通常會引發有關良好編碼實踐的爭論，但有時它很有用。</span></span></p>
+<p><span><span>例如：</span></span></p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python">  <span class="k">while</span> <span class="bp">True</span><span class="p">:</span> 
+    <span class="n">usr_command</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter your command: "</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">usr_command</span> <span class="o">==</span> <span class="s">"quit"</span><span class="p">:</span>
+      <span class="k">break</span>
+    <span class="k">else</span><span class="p">:</span> 
+      <span class="k">print</span><span class="p">(</span><span class="s">"You typed "</span> <span class="o">+</span> <span class="n">usr_command</span><span class="p">)</span></code></pre>
+</figure>
+<p><span><span>在這種情況下，該</span></span><code class="highlighter-rouge">break</code><span><span>語句用於中斷我們使用該</span></span><code class="highlighter-rouge">while True</code><span><span>語句</span><span>構造的“無限while循環”<span> </span></span><span>。</span></span></p>
+<p><strong>祝您編碼愉快！</strong></p>
+<br />7 - List Comperhensions 清單理解 << <a href='7 - List Comperhensions 清單理解.html'>Previous</a> <a href='9 - Guessing Gmae One.html'>Next</a> >> 9 - Guessing Gmae One</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        

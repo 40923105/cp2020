@@ -133,22 +133,142 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">PCH 2 - Introduction (簡介) P.19 << <a href='PCH 2 - Introduction (簡介) P.19.html'>Previous</a> <a href='PCH 2 - Power Supplies (電源) P.21.html'>Next</a> >> PCH 2 - Power Supplies (電源) P.21<br /><h1>PCH 2 - Operational Procedures Electrical Safety (操作程序 電氣安全) P.20</h1>
-<p id="N10680" lang="">Electricity is a significant hazard in working with computer systems and tools. Electricity is required to make workstations operate, but if you are not careful, electricity can cause serious injury to you and major damage to the computer you are working on.</p>
-<p lang=""><span>電力是使用計算機系統和工具的重大危險。</span><span>要使工作站正常工作，需要通電，但是如果不小心，電流可能會對您造成嚴重傷害，並嚴重損壞您正在使用的計算機。</span></p>
-<p id="N10683" lang="">With regard to human injury, technicians can receive an electrical shock from computers or electrical outlets if special care is not taken when working with them. It is important to check all the power outlets to ensure they are working properly. When checking the outlets, you should verify that the outlet is providing the correct amount of power. If you are working in the United States, then you should expect to receive a voltage of 115 VAC to 120 VAC (volts of alternating current) from the power outlets in an office or home. This can be verified using a simple three-prong tester, voltmeter, or multimeter. Procedurally, you must never pull the cords out by the wires, as this can cause damage and fraying of the cables. Instead, you should plug in and remove cables by the plug on the end of the cord. It is important that you never use a frayed or damaged power cable.</p>
-<p lang=""><span>關於人身傷害，如果在操作計算機或電源插座時未特別注意，則技術人員可能會從計算機或電源插座中遭受電擊。</span><span>檢查所有電源插座以確保它們正常工作很重要。</span><span>檢查插座時，應驗證插座是否提供了正確的電量。</span><span>如果您在美國工作，則應該期望從辦公室或家庭的電源插座接收115 VAC至120 VAC（交流電壓）的電壓。</span><span>可以使用簡單的三叉測試儀，電壓表或萬用表進行驗證。</span><span>程序上，切勿將電線從電線中拉出，因為這會導致電纜損壞和磨損。</span><span>相反，您應該插入插頭並通過電源線末端的插頭拔出電纜。</span></p>
-<p id="N10686" lang="">In addition to keeping themselves safe, technicians need to keep computers safe from electrical damage. It is common to use a surge protector to protect computers from power spikes or surges. A power strip is not the same thing as a surge protector. Surge protectors are rated in joules (J), a unit of energy. The rating indicates the number of joules the surge protector can absorb before failure. A higher rating indicates greater protection for the computer. Also, you must not overload the surge protectors, and must never daisy-chain them, or plug one surge protector into another: this causes higher amperage draws that can lead to fires.</p>
-<p lang=""><span>除了確保自己安全外，技術人員還需要保護計算機免受電氣損壞。</span><span>通常使用電湧保護器來保護計算機免受電源尖峰或電湧的影響。</span><span>配電盤與電湧保護器不是一回事。</span><span>電湧保護器的額定功率單位為焦耳（J）。</span><span>額定值表示電湧保護器在故障之前可以吸收的焦耳數。</span><span>額定值越高，表示對計算機的保護越高。</span><span>另外，您一定不能使電湧保護器過載，也不能以菊花鏈的方式將其電湧，或將一個電湧保護器插入另一個電湧保護器：這會導致電流消耗增加，從而引發火災。</span></p>
-<div class="imagewrap"><span class="image"><img alt="Photograph of an electrical outlet with an extension    plugged into a second extension with multiple devices plugged into it." class="popimg" id="_i_0" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH02/webcontent/PCH02/image1.jpeg" title="Photograph of an electrical outlet with an extension    plugged into a second extension with multiple devices plugged into it."/></span></div>
-<div class="imagewrap">
-<div class="imagewrap"><span class="caption" lang="">Overloaded electrical outlet. Photo used under CC-BY license from<span> </span><span style="color: #000000;">Gordon Wrigley.</span></span></div>
-<div class="imagewrap"><span class="caption" lang=""><span style="color: #000000;">(<span>電源插座過載。照片由</span>Gordon Wrigley<span><span>根據CC-BY許可使用</span><span>。</span></span>)</span></span></div>
-<div class="imagewrap"><span class="caption" lang=""><span style="color: #000000;"></span></span></div>
+    <div id="tipue_search_content">9 - Guessing Gmae One << <a href='9 - Guessing Gmae One.html'>Previous</a> <br /><h1>7 - List Comprehensions Solutions</h1>
+<p><strong>Exercise 7</strong></p>
+<p>Let’s say I give you a list saved in a variable:<span> </span><code class="highlighter-rouge">a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]</code>. Write one line of Python that takes this list<span> </span><code class="highlighter-rouge">a</code><span> </span>and makes a new list that has only the even elements of this list in it.</p>
+<p><strong>Sample solutions</strong></p>
+<p>For the meat of the solution, check this out:</p>
+<div class="gist" id="gist9779343">
+<div class="gist-file">
+<div class="gist-data">
+<div class="js-gist-file-update-container js-task-list-container file-box">
+<div class="file my-2" id="file-gistfile1-py">
+<div class="Box-body p-0 blob-wrapper data type-python" itemprop="text">
+<table cellspacing="0" class="highlight tab-size js-file-line-container" data-paste-markdown-skip="" data-tab-size="8" style="width: 485px; border-color: #000000; height: 50px;">
+<tbody>
+<tr style="height: 24px;">
+<td class="blob-code blob-code-inner js-file-line" id="file-gistfile1-py-LC1" style="width: 480.8px; height: 24px;"><span class="pl-s1"><span>  </span>1     b</span> <span class="pl-c1">=</span> [<span class="pl-s1">element</span> <span class="pl-k">for</span> <span class="pl-s1">element</span> <span class="pl-c1">in</span> <span class="pl-s1">a</span> <span class="pl-k">if</span> <span class="pl-s1">element</span> <span class="pl-c1">%</span> <span class="pl-c1">2</span> <span class="pl-c1">==</span> <span class="pl-c1">0</span>]</td>
+</tr>
+<tr style="height: 24.375px;">
+<td class="blob-code blob-code-inner js-file-line" style="width: 480.8px; height: 24.375px;"><span class="pl-s1"><span>  <a href="https://gist.github.com/anonymous/9779343#file-gistfile1-py">gistfile1.py</a></span><span> </span>hosted with ❤ by<span> </span><a href="https://github.com/">GitHub</a>                                            <a href="https://gist.github.com/anonymous/9779343/raw/f775b4bd8163439e95cf1dc2d37e274d9a62d696/gistfile1.py">view raw</a></span></td>
+</tr>
+</tbody>
+</table>
 </div>
-<p id="N10696" lang="">If continuous power to a workstation is necessary, you can use an uninterruptible power supply (UPS). A UPS should never be used for laser printers, as it draws too much power through the UPS and can cause damage to the printer.</p>
-<p lang=""><span>如果需要為工作站持續供電，則可以使用不間斷電源（UPS）。</span><span>切勿將UPS用於激光打印機，因為它會通過UPS消耗過多功率，並可能損壞打印機。</span></p>
-<br />PCH 2 - Introduction (簡介) P.19 << <a href='PCH 2 - Introduction (簡介) P.19.html'>Previous</a> <a href='PCH 2 - Power Supplies (電源) P.21.html'>Next</a> >> PCH 2 - Power Supplies (電源) P.21</div>
+</div>
+</div>
+</div>
+<div class="gist-meta"></div>
+</div>
+</div>
+<p>And for a “complete” solution, look at this:</p>
+<div class="gist" id="gist9659795">
+<div class="gist-file">
+<div class="gist-data">
+<div class="js-gist-file-update-container js-task-list-container file-box">
+<div class="file my-2" id="file-exercise-7-list-comprehension">
+<div class="Box-body p-0 blob-wrapper data type-text" itemprop="text">
+<table cellspacing="0" class="highlight tab-size js-file-line-container" data-paste-markdown-skip="" data-tab-size="8" style="width: 485px; height: 107px; border-color: #000000;">
+<tbody>
+<tr style="height: 14px;">
+<td class="blob-code blob-code-inner js-file-line" id="file-exercise-7-list-comprehension-LC1" style="width: 490.4px; height: 14px;"><span>  </span>1<span>     </span>__author__ = 'jhunt'</td>
+</tr>
+<tr style="height: 14px;">
+<td class="blob-code blob-code-inner js-file-line" id="file-exercise-7-list-comprehension-LC2" style="width: 490.4px; height: 14px;"><span>  </span>2</td>
+</tr>
+<tr style="height: 14px;">
+<td class="blob-code blob-code-inner js-file-line" id="file-exercise-7-list-comprehension-LC3" style="width: 490.4px; height: 14px;"><span>  </span>3<span>     </span>a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]</td>
+</tr>
+<tr style="height: 14px;">
+<td class="blob-code blob-code-inner js-file-line" id="file-exercise-7-list-comprehension-LC4" style="width: 490.4px; height: 14px;"><span>  </span>4<span>     </span>b = [number for number in a if number % 2 == 0]</td>
+</tr>
+<tr style="height: 14px;">
+<td class="blob-code blob-code-inner js-file-line" id="file-exercise-7-list-comprehension-LC5" style="width: 490.4px; height: 14px;"><span>  </span>5</td>
+</tr>
+<tr style="height: 14.375px;">
+<td class="blob-code blob-code-inner js-file-line" id="file-exercise-7-list-comprehension-LC6" style="width: 490.4px; height: 14.375px;"><span>  </span>6<span>     </span>print(b)</td>
+</tr>
+<tr style="height: 14px;">
+<td class="blob-code blob-code-inner js-file-line" style="width: 490.4px; height: 14px;">  <a href="https://gist.github.com/jeffhunt/9659795#file-exercise-7-list-comprehension">Exercise 7 - List Comprehension</a><span> </span>hosted with ❤ by<span> </span><a href="https://github.com/">GitHub</a>              <a href="https://gist.github.com/jeffhunt/9659795/raw/45c305e1097747b1ec456b4ca51c1b8100bbfa66/Exercise%207%20-%20List%20Comprehension">view raw</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="gist-meta"></div>
+</div>
+</div>
+<p>For a solution that uses the<span> </span><code class="highlighter-rouge">random</code><span> </span>library to generate test lists, check this out:</p>
+<div class="gist" id="gist9782963">
+<div class="gist-file">
+<div class="gist-data">
+<div class="js-gist-file-update-container js-task-list-container file-box">
+<div class="file my-2" id="file-list_comprehension-py">
+<div class="Box-body p-0 blob-wrapper data type-python" itemprop="text">
+<table border="0" cellspacing="0" class="highlight tab-size js-file-line-container" data-paste-markdown-skip="" data-tab-size="8" style="width: 485px; border-color: #000000;">
+<tbody>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-list_comprehension-py-LC1" style="width: 484.4px;"><span class="pl-k"><span>  </span>1<span>     </span>import</span> <span class="pl-s1">random</span></td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-list_comprehension-py-LC2" style="width: 484.4px;"><span>  </span>2</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-list_comprehension-py-LC3" style="width: 484.4px;"><span class="pl-s1"><span>  </span>3<span>     </span>numlist</span> <span class="pl-c1">=</span> []</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-list_comprehension-py-LC4" style="width: 484.4px;"><span class="pl-s1"><span>  </span>4<span>     </span>list_length</span> <span class="pl-c1">=</span> <span class="pl-s1">random</span>.<span class="pl-en">randint</span>(<span class="pl-c1">5</span>,<span class="pl-c1">15</span>)</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-list_comprehension-py-LC5" style="width: 484.4px;">  5</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-list_comprehension-py-LC6" style="width: 484.4px;"><span>  </span>6</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-list_comprehension-py-LC7" style="width: 484.4px;"><span class="pl-k"><span>  </span>7<span>     </span>while</span> <span class="pl-en">len</span>(<span class="pl-s1">numlist</span>) <span class="pl-c1">&lt;</span> <span class="pl-s1">list_length</span>:</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-list_comprehension-py-LC8" style="width: 484.4px;"><span class="pl-s1"><span>  </span>8<span>     </span>numlist</span>.<span class="pl-en">append</span>(<span class="pl-s1">random</span>.<span class="pl-en">randint</span>(<span class="pl-c1">1</span>,<span class="pl-c1">75</span>))</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-list_comprehension-py-LC9" style="width: 484.4px;"><span>  </span>9</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-list_comprehension-py-LC10" style="width: 484.4px;">10</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-list_comprehension-py-LC11" style="width: 484.4px;"><span class="pl-s1">11<span>     </span>evenlist</span> <span class="pl-c1">=</span> [<span class="pl-s1">number</span> <span class="pl-k">for</span> <span class="pl-s1">number</span> <span class="pl-c1">in</span> <span class="pl-s1">numlist</span> <span class="pl-k">if</span> <span class="pl-s1">number</span> <span class="pl-c1">%</span> <span class="pl-c1">2</span> <span class="pl-c1">==</span> <span class="pl-c1">0</span>]</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-list_comprehension-py-LC12" style="width: 484.4px;">12</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-list_comprehension-py-LC13" style="width: 484.4px;"><span class="pl-en">13<span>     </span>print</span>(<span class="pl-s1">numlist</span>)</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="file-list_comprehension-py-LC14" style="width: 484.4px;"><span class="pl-en">14<span>     </span>print</span>(<span class="pl-s1">evenlist</span>)</td>
+</tr>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" style="width: 484.4px;">
+<div class="gist" id="gist9782963">
+<div class="gist-file">
+<div class="gist-meta"><a href="https://gist.github.com/JamieMacIver/9782963#file-list_comprehension-py">list_comprehension.py</a><span> </span>hosted with ❤ by<span> </span><a href="https://github.com/">GitHub</a>                             <a href="https://gist.github.com/JamieMacIver/9782963/raw/38d3687da976010a1d0892897af7ed162c5aaf51/list_comprehension.py">view raw</a></div>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="gist-meta"><strong>Share the fun!</strong></div>
+</div>
+</div><br />9 - Guessing Gmae One << <a href='9 - Guessing Gmae One.html'>Previous</a> </div>
         
     <!-- footer -->
       <div class="container">
