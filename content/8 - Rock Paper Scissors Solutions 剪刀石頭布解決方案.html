@@ -143,115 +143,47 @@ img.add_border {
 <li>Paper beats rock</li>
 </ul>
 <p><strong>Sample solution</strong></p>
-<div class="gist" id="gist9805000">
-<div class="gist-file">
-<div class="gist-data">
-<div class="js-gist-file-update-container js-task-list-container file-box">
-<div class="file my-2" id="file-rockpaperscissors-py">
-<div class="Box-body p-0 blob-wrapper data type-python" itemprop="text">
-<table border="1" cellspacing="0" class="highlight tab-size js-file-line-container" data-paste-markdown-skip="" data-tab-size="8" style="width: 573px;">
+<table border="1" cellspacing="0" class="highlight tab-size js-file-line-container" data-paste-markdown-skip="" data-tab-size="8" style="width: 573px; border-color: #d1cfcf;">
 <tbody>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC1" style="width: 638.8px; height: 14px;"><span class="pl-k"><span>  1      </span>import</span> <span class="pl-s1">sys</span></td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC2" style="width: 638.8px; height: 14px;"><span>  2        </span></td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC3" style="width: 638.8px; height: 14px;"><span class="pl-s1"><span>  3      </span>user1</span> <span class="pl-c1">=</span> <span class="pl-en">input</span>(<span class="pl-s">"What's your name?"</span>)</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC4" style="width: 638.8px; height: 14px;"><span class="pl-s1"><span>  4      </span>user2</span> <span class="pl-c1">=</span> <span class="pl-en">input</span>(<span class="pl-s">"And your name?"</span>)</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC5" style="width: 638.8px; height: 14px;"><span class="pl-s1"><span>  5      </span>user1_answer</span> <span class="pl-c1">=</span> <span class="pl-en">input</span>(<span class="pl-s">"%s, do yo want to choose rock, paper or scissors?"</span> <span class="pl-c1">%</span> <span class="pl-s1">user1</span>)</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC6" style="width: 638.8px; height: 14px;"><span class="pl-s1"><span>  6      </span>user2_answer</span> <span class="pl-c1">=</span> <span class="pl-en">input</span>(<span class="pl-s">"%s, do you want to choose rock, paper or scissors?"</span> <span class="pl-c1">%</span> <span class="pl-s1">user2</span>)</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC7" style="width: 638.8px; height: 14px;"><span>  7          </span></td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC8" style="width: 638.8px; height: 14px;"><span class="pl-k"><span>  8      </span>def</span> <span class="pl-en">compare</span>(<span class="pl-s1">u1</span>, <span class="pl-s1">u2</span>):</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC9" style="width: 638.8px; height: 14px;"><span class="pl-k"><span>  9      </span>if</span> <span class="pl-s1">u1</span> <span class="pl-c1">==</span> <span class="pl-s1">u2</span>:</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC10" style="width: 638.8px; height: 14px;"><span class="pl-k"><span>10      </span>return</span>(<span class="pl-s">"It's a tie!"</span>)</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC11" style="width: 638.8px; height: 14px;"><span class="pl-k"><span>11      </span>elif</span> <span class="pl-s1">u1</span> <span class="pl-c1">==</span> <span class="pl-s">'rock'</span>:</td>
-</tr>
-<tr style="height: 14.975px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC12" style="width: 638.8px; height: 14.975px;"><span class="pl-k"><span>12      </span>if</span> <span class="pl-s1">u2</span> <span class="pl-c1">==</span> <span class="pl-s">'scissors'</span>:</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC13" style="width: 638.8px; height: 14px;"><span class="pl-k"><span>13      </span>return</span>(<span class="pl-s">"Rock wins!"</span>)</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC14" style="width: 638.8px; height: 14px;"><span class="pl-k"><span>14      </span>else</span>:</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC15" style="width: 638.8px; height: 14px;"><span class="pl-k"><span>15      </span>return</span>(<span class="pl-s">"Paper wins!"</span>)</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC16" style="width: 638.8px; height: 14px;"><span class="pl-k"><span>16      </span>elif</span> <span class="pl-s1">u1</span> <span class="pl-c1">==</span> <span class="pl-s">'scissors'</span>:</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC17" style="width: 638.8px; height: 14px;"><span class="pl-k"><span>17      </span>if</span> <span class="pl-s1">u2</span> <span class="pl-c1">==</span> <span class="pl-s">'paper'</span>:</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC18" style="width: 638.8px; height: 14px;"><span class="pl-k"><span>18      </span>return</span>(<span class="pl-s">"Scissors win!"</span>)</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC19" style="width: 638.8px; height: 14px;"><span class="pl-k"><span>19      </span>else</span>:</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC20" style="width: 638.8px; height: 14px;"><span class="pl-k"><span>20      </span>return</span>(<span class="pl-s">"Rock wins!"</span>)</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC21" style="width: 638.8px; height: 14px;"><span class="pl-k"><span>21      </span>elif</span> <span class="pl-s1">u1</span> <span class="pl-c1">==</span> <span class="pl-s">'paper'</span>:</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC22" style="width: 638.8px; height: 14px;"><span class="pl-k"><span>22      </span>if</span> <span class="pl-s1">u2</span> <span class="pl-c1">==</span> <span class="pl-s">'rock'</span>:</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC23" style="width: 638.8px; height: 14px;"><span class="pl-k"><span>23      </span>return</span>(<span class="pl-s">"Paper wins!"</span>)</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC24" style="width: 638.8px; height: 14px;"><span class="pl-k"><span>24      </span>else</span>:</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC25" style="width: 638.8px; height: 14px;"><span class="pl-k"><span>25      </span>return</span>(<span class="pl-s">"Scissors win!"</span>)</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC26" style="width: 638.8px; height: 14px;"><span class="pl-k"><span>26 <span>     </span></span>else</span>:</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC27" style="width: 638.8px; height: 14px;"><span class="pl-k"><span>27      </span>return</span>(<span class="pl-s">"Invalid input! You have not entered rock, paper or scissors, try again."</span>)</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC28" style="width: 638.8px; height: 14px;"><span class="pl-s1"><span>28      </span>sys</span>.<span class="pl-en">exit</span>()</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC29" style="width: 638.8px; height: 14px;">29</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC30" style="width: 638.8px; height: 14px;"><span class="pl-en">30      print</span>(<span class="pl-en">compare</span>(<span class="pl-s1">user1_answer</span>, <span class="pl-s1">user2_answer</span>))</td>
+<tr style="height: 369.775px;">
+<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC1" style="width: 638.8px; height: 369.775px;">
+<pre>   1    import sys
+   2
+   3    user1 = input("What's your name?")
+   4    user2 = input("And your name?")
+   5    user1_answer = input("%s, do yo want to choose rock, paper or scissors?" % user1)
+   6    user2_answer = input("%s, do you want to choose rock, paper or scissors?" % user2)
+   7    
+   8    def compare(u1, u2):
+   9        if u1 == u2:
+  10        return("It's a tie!")
+  11        elif u1 == 'rock':
+  12            if u2 == 'scissors':
+  13                return("Rock wins!")
+  14            else:
+  15                return("Paper wins!")
+  16        elif u1 == 'scissors':
+  17            if u2 == 'paper':
+  18                return("Scissors win!")
+  19            else:
+  20                return("Rock wins!")
+  21        elif u1 == 'paper':
+  22            if u2 == 'rock':
+  23                return("Paper wins!")
+  24            else:
+  25                return("Scissors win!")
+  26        else:
+  27            return("Invalid input! You have not entered rock, paper or scissors, try again.")
+  28            sys.exit()
+  29
+  30    print(compare(user1_answer, user2_answer)</pre>
+</td>
 </tr>
 <tr style="height: 15px;">
-<td class="blob-code blob-code-inner js-file-line" style="width: 638.8px; height: 15px;"><span class="pl-en"><a href="https://gist.github.com/redice99/21ceca1561519f5a12bc#file-rockpaperscissors-py">rockpaperscissors.py</a><span> </span>hosted with ❤ by<span> </span><a href="https://github.com/">GitHub</a>    <a href="https://gist.github.com/redice99/21ceca1561519f5a12bc/raw/83a656379141e32ded22ae53d030b74dd02c4b97/rockpaperscissors.py">view raw</a></span></td>
+<td class="blob-code blob-code-inner js-file-line" style="width: 638.8px; height: 15px;"><span class="pl-en"> <a href="https://gist.github.com/redice99/21ceca1561519f5a12bc#file-rockpaperscissors-py">rockpaperscissors.py</a><span> </span>hosted with ❤ by<span> </span><a href="https://github.com/">GitHub</a>    <a href="https://gist.github.com/redice99/21ceca1561519f5a12bc/raw/83a656379141e32ded22ae53d030b74dd02c4b97/rockpaperscissors.py">view raw</a></span></td>
 </tr>
 </tbody>
 </table>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
 <p>Another sample solution uses a clever way of checking the winner:</p>
 <div class="gist" id="gist29840996">
 <div class="gist-file">
@@ -259,100 +191,44 @@ img.add_border {
 <div class="js-gist-file-update-container js-task-list-container file-box">
 <div class="file my-2" id="file-rock-paper-scissors-game">
 <div class="Box-body p-0 blob-wrapper data type-text" itemprop="text">
-<table border="1" cellspacing="0" class="highlight tab-size js-file-line-container" data-paste-markdown-skip="" data-tab-size="8" style="width: 573px;">
+<table border="1" cellspacing="0" class="highlight tab-size js-file-line-container" data-paste-markdown-skip="" data-tab-size="8" style="width: 573px; border-color: #d1cfcf;">
 <tbody>
 <tr style="height: 14.575px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC1" style="width: 441px; height: 14.575px;"><span>  1        </span>print('''Please pick one:</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC2" style="width: 441px; height: 14px;"><span>  2        </span>rock</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC3" style="width: 441px; height: 14px;"><span>  3        </span>scissors</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC4" style="width: 441px; height: 14px;"><span>  4        </span>paper''')</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC5" style="width: 441px; height: 14px;"><span>  5</span></td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC6" style="width: 441px; height: 14px;"><span>  6        </span>while True:</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC7" style="width: 441px; height: 14px;"><span>  7        </span>game_dict = {'rock': 1, 'scissors': 2, 'paper': 3}</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC8" style="width: 441px; height: 14px;"><span>  8        </span>player_a = str(input("Player a: "))</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC9" style="width: 441px; height: 14px;"><span>  9        </span>player_b = str(input("Player b: "))</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC10" style="width: 441px; height: 14px;">10<span>        </span>a = game_dict.get(player_a)</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC11" style="width: 441px; height: 14px;">11<span>        </span>b = game_dict.get(player_b)</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC12" style="width: 441px; height: 14px;">12<span>        </span>dif = a - b</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC13" style="width: 441px; height: 14px;">13</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC14" style="width: 441px; height: 14px;">14<span>        </span>if dif in [-1, 2]:</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC15" style="width: 441px; height: 14px;">15<span>        </span>print('player a wins.')</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC16" style="width: 441px; height: 14px;">16<span>        </span>if str(input('Do you want to play another game, yes or no?\n')) == 'yes':</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC17" style="width: 441px; height: 14px;">17<span>        </span>continue</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC18" style="width: 441px; height: 14px;">18<span>        </span>else:</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC19" style="width: 441px; height: 14px;">19<span>        </span>print('game over.')</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC20" style="width: 441px; height: 14px;">20<span>        </span>break</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC21" style="width: 441px; height: 14px;">21<span>        </span>elif dif in [-2, 1]:</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC22" style="width: 441px; height: 14px;">22<span>        </span>print('player b wins.')</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC23" style="width: 441px; height: 14px;">23<span>        </span>if str(input('Do you want to play another game, yes or no?\n')) == 'yes':</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC24" style="width: 441px; height: 14px;">24<span>        </span>continue</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC25" style="width: 441px; height: 14px;">25<span>        </span>else:</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC26" style="width: 441px; height: 14px;">26<span>        </span>print('game over.')</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC27" style="width: 441px; height: 14px;">27<span>        </span>break</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC28" style="width: 441px; height: 14px;">28<span>        </span>else:</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC29" style="width: 441px; height: 14px;">29<span>        </span>print('Draw.Please continue.')</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC30" style="width: 441px; height: 14px;">30        print('')</td>
+<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC1" style="width: 441px; height: 14.575px;">
+<pre>   1    print('''Please pick one:
+   2                rock
+   3                scissors
+   4                paper''')
+   5    
+   6    while True:
+   7        game_dict = {'rock': 1, 'scissors': 2, 'paper': 3}
+   8        player_a = str(input("Player a: "))
+   9        player_b = str(input("Player b: "))
+  10        a = game_dict.get(player_a)
+  11        b = game_dict.get(player_b)
+  12        dif = a - b
+  13    
+  14        if dif in [-1, 2]:
+  15            print('player a wins.')
+  16            if str(input('Do you want to play another game, yes or no?\n')) == 'yes':
+  17                continue
+  18            else:
+  19                print('game over.')
+  20                break
+  21        elif dif in [-2, 1]:
+  22            print('player b wins.')
+  23            if str(input('Do you want to play another game, yes or no?\n')) == 'yes':
+  24                continue
+  25            else:
+  26                print('game over.')
+  27                break
+  28        else:
+  29            print('Draw.Please continue.')
+  30            print('')</pre>
+</td>
 </tr>
 <tr style="height: 15px;">
-<td class="blob-code blob-code-inner js-file-line" style="width: 441px; height: 15px;"><a href="https://gist.github.com/springtan/6f579c3160bdcac2a0df#file-rock-paper-scissors-game">rock, paper, scissors game</a><span> </span>hosted with ❤ by<span> </span><a href="https://github.com/">GitHub</a>    <a href="https://gist.github.com/springtan/6f579c3160bdcac2a0df/raw/8c7899c1115d927feb27b82dc835a032f3473b56/rock,%20paper,%20scissors%20game">view raw</a></td>
+<td class="blob-code blob-code-inner js-file-line" style="width: 441px; height: 15px;"> <a href="https://gist.github.com/springtan/6f579c3160bdcac2a0df#file-rock-paper-scissors-game">rock, paper, scissors game</a><span> </span>hosted with ❤ by<span> </span><a href="https://github.com/">GitHub</a>    <a href="https://gist.github.com/springtan/6f579c3160bdcac2a0df/raw/8c7899c1115d927feb27b82dc835a032f3473b56/rock,%20paper,%20scissors%20game">view raw</a></td>
 </tr>
 </tbody>
 </table>
@@ -372,97 +248,41 @@ img.add_border {
 <li><span><span>紙打石頭</span></span></li>
 </ul>
 <p><strong>樣品解決方案</strong></p>
-<table border="1" cellspacing="0" class="highlight tab-size js-file-line-container" data-paste-markdown-skip="" data-tab-size="8" style="width: 573px;">
+<table border="1" cellspacing="0" class="highlight tab-size js-file-line-container" data-paste-markdown-skip="" data-tab-size="8" style="width: 573px; border-color: #d1cfcf;">
 <tbody>
 <tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC1" style="width: 566.8px;"><span class="pl-k"><span>  1      </span>import</span><span> </span><span class="pl-s1">sys</span></td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC2" style="width: 566.8px;"><span>  2        </span></td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC3" style="width: 566.8px;"><span class="pl-s1"><span>  3      </span>user1</span><span> </span><span class="pl-c1">=</span><span> </span><span class="pl-en">input</span>(<span class="pl-s">"What's your name?"</span>)</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC4" style="width: 566.8px;"><span class="pl-s1"><span>  4      </span>user2</span><span> </span><span class="pl-c1">=</span><span> </span><span class="pl-en">input</span>(<span class="pl-s">"And your name?"</span>)</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC5" style="width: 566.8px;"><span class="pl-s1"><span>  5      </span>user1_answer</span><span> </span><span class="pl-c1">=</span><span> </span><span class="pl-en">input</span>(<span class="pl-s">"%s, do yo want to choose rock, paper or scissors?"</span><span> </span><span class="pl-c1">%</span><span> </span><span class="pl-s1">user1</span>)</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC6" style="width: 566.8px;"><span class="pl-s1"><span>  6      </span>user2_answer</span><span> </span><span class="pl-c1">=</span><span> </span><span class="pl-en">input</span>(<span class="pl-s">"%s, do you want to choose rock, paper or scissors?"</span><span> </span><span class="pl-c1">%</span><span> </span><span class="pl-s1">user2</span>)</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC7" style="width: 566.8px;"><span>  7          </span></td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC8" style="width: 566.8px;"><span class="pl-k"><span>  8      </span>def</span><span> </span><span class="pl-en">compare</span>(<span class="pl-s1">u1</span>,<span> </span><span class="pl-s1">u2</span>):</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC9" style="width: 566.8px;"><span class="pl-k"><span>  9      </span>if</span><span> </span><span class="pl-s1">u1</span><span> </span><span class="pl-c1">==</span><span> </span><span class="pl-s1">u2</span>:</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC10" style="width: 566.8px;"><span class="pl-k"><span>10      </span>return</span>(<span class="pl-s">"It's a tie!"</span>)</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC11" style="width: 566.8px;"><span class="pl-k"><span>11      </span>elif</span><span> </span><span class="pl-s1">u1</span><span> </span><span class="pl-c1">==</span><span> </span><span class="pl-s">'rock'</span>:</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC12" style="width: 566.8px;"><span class="pl-k"><span>12      </span>if</span><span> </span><span class="pl-s1">u2</span><span> </span><span class="pl-c1">==</span><span> </span><span class="pl-s">'scissors'</span>:</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC13" style="width: 566.8px;"><span class="pl-k"><span>13      </span>return</span>(<span class="pl-s">"Rock wins!"</span>)</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC14" style="width: 566.8px;"><span class="pl-k"><span>14      </span>else</span>:</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC15" style="width: 566.8px;"><span class="pl-k"><span>15      </span>return</span>(<span class="pl-s">"Paper wins!"</span>)</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC16" style="width: 566.8px;"><span class="pl-k"><span>16      </span>elif</span><span> </span><span class="pl-s1">u1</span><span> </span><span class="pl-c1">==</span><span> </span><span class="pl-s">'scissors'</span>:</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC17" style="width: 566.8px;"><span class="pl-k"><span>17      </span>if</span><span> </span><span class="pl-s1">u2</span><span> </span><span class="pl-c1">==</span><span> </span><span class="pl-s">'paper'</span>:</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC18" style="width: 566.8px;"><span class="pl-k"><span>18      </span>return</span>(<span class="pl-s">"Scissors win!"</span>)</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC19" style="width: 566.8px;"><span class="pl-k"><span>19      </span>else</span>:</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC20" style="width: 566.8px;"><span class="pl-k"><span>20      </span>return</span>(<span class="pl-s">"Rock wins!"</span>)</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC21" style="width: 566.8px;"><span class="pl-k"><span>21      </span>elif</span><span> </span><span class="pl-s1">u1</span><span> </span><span class="pl-c1">==</span><span> </span><span class="pl-s">'paper'</span>:</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC22" style="width: 566.8px;"><span class="pl-k"><span>22      </span>if</span><span> </span><span class="pl-s1">u2</span><span> </span><span class="pl-c1">==</span><span> </span><span class="pl-s">'rock'</span>:</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC23" style="width: 566.8px;"><span class="pl-k"><span>23      </span>return</span>(<span class="pl-s">"Paper wins!"</span>)</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC24" style="width: 566.8px;"><span class="pl-k"><span>24      </span>else</span>:</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC25" style="width: 566.8px;"><span class="pl-k"><span>25      </span>return</span>(<span class="pl-s">"Scissors win!"</span>)</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC26" style="width: 566.8px;"><span class="pl-k"><span>26      </span>else</span>:</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC27" style="width: 566.8px;"><span class="pl-k"><span>27      </span>return</span>(<span class="pl-s">"Invalid input! You have not entered rock, paper or scissors, try again."</span>)</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC28" style="width: 566.8px;"><span class="pl-s1"><span>28      </span>sys</span>.<span class="pl-en">exit</span>()</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC29" style="width: 566.8px;">29</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC30" style="width: 566.8px;"><span class="pl-en">30      print</span>(<span class="pl-en">compare</span>(<span class="pl-s1">user1_answer</span>,<span> </span><span class="pl-s1">user2_answer</span>))</td>
+<td class="blob-code blob-code-inner js-file-line" id="file-rockpaperscissors-py-LC1" style="width: 566.8px;">
+<pre>   1    import sys
+   2
+   3    user1 = input("What's your name?")
+   4    user2 = input("And your name?")
+   5    user1_answer = input("%s, do yo want to choose rock, paper or scissors?" % user1)
+   6    user2_answer = input("%s, do you want to choose rock, paper or scissors?" % user2)
+   7    
+   8    def compare(u1, u2):
+   9        if u1 == u2:
+  10        return("It's a tie!")
+  11        elif u1 == 'rock':
+  12            if u2 == 'scissors':
+  13                return("Rock wins!")
+  14            else:
+  15                return("Paper wins!")
+  16        elif u1 == 'scissors':
+  17            if u2 == 'paper':
+  18                return("Scissors win!")
+  19            else:
+  20                return("Rock wins!")
+  21        elif u1 == 'paper':
+  22            if u2 == 'rock':
+  23                return("Paper wins!")
+  24            else:
+  25                return("Scissors win!")
+  26        else:
+  27            return("Invalid input! You have not entered rock, paper or scissors, try again.")
+  28            sys.exit()
+  29
+  30    print(compare(user1_answer, user2_answer)</pre>
+</td>
 </tr>
 <tr>
 <td class="blob-code blob-code-inner js-file-line" style="width: 566.8px;"><span class="pl-en"><a href="https://gist.github.com/redice99/21ceca1561519f5a12bc#file-rockpaperscissors-py">rockpaperscissors.py</a><span> </span>由<span> </span><a href="https://github.com/">GitHub</a> 託管  <span> </span><a href="https://gist.github.com/redice99/21ceca1561519f5a12bc/raw/83a656379141e32ded22ae53d030b74dd02c4b97/rockpaperscissors.py">查看原始</a></span></td>
@@ -470,100 +290,44 @@ img.add_border {
 </tbody>
 </table>
 <p><span><span>另一個示例解決方案使用一種巧妙的方法來檢查獲勝者：</span></span></p>
-<table border="1" cellspacing="0" class="highlight tab-size js-file-line-container" data-paste-markdown-skip="" data-tab-size="8" style="width: 573px;">
+<table border="1" cellspacing="0" class="highlight tab-size js-file-line-container" data-paste-markdown-skip="" data-tab-size="8" style="width: 573px; border-color: #d1cfcf;">
 <tbody>
-<tr style="height: 14.175px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC1" style="width: 441px; height: 14.175px;"><span>  1        </span>print('''Please pick one:</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC2" style="width: 441px; height: 14px;"><span>  2        </span>rock</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC3" style="width: 441px; height: 14px;"><span>  3        </span>scissors</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC4" style="width: 441px; height: 14px;"><span>  4        </span>paper''')</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC5" style="width: 441px; height: 14px;"><span>  5</span></td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC6" style="width: 441px; height: 14px;"><span>  6        </span>while True:</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC7" style="width: 441px; height: 14px;"><span>  7        </span>game_dict = {'rock': 1, 'scissors': 2, 'paper': 3}</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC8" style="width: 441px; height: 14px;"><span>  8        </span>player_a = str(input("Player a: "))</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC9" style="width: 441px; height: 14px;"><span>  9        </span>player_b = str(input("Player b: "))</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC10" style="width: 441px; height: 14px;">10<span>        </span>a = game_dict.get(player_a)</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC11" style="width: 441px; height: 14px;">11<span>        </span>b = game_dict.get(player_b)</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC12" style="width: 441px; height: 14px;">12<span>        </span>dif = a - b</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC13" style="width: 441px; height: 14px;">13</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC14" style="width: 441px; height: 14px;">14<span>        </span>if dif in [-1, 2]:</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC15" style="width: 441px; height: 14px;">15<span>        </span>print('player a wins.')</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC16" style="width: 441px; height: 14px;">16<span>        </span>if str(input('Do you want to play another game, yes or no?\n')) == 'yes':</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC17" style="width: 441px; height: 14px;">17<span>        </span>continue</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC18" style="width: 441px; height: 14px;">18<span>        </span>else:</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC19" style="width: 441px; height: 14px;">19<span>        </span>print('game over.')</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC20" style="width: 441px; height: 14px;">20<span>        </span>break</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC21" style="width: 441px; height: 14px;">21<span>        </span>elif dif in [-2, 1]:</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC22" style="width: 441px; height: 14px;">22<span>        </span>print('player b wins.')</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC23" style="width: 441px; height: 14px;">23<span>        </span>if str(input('Do you want to play another game, yes or no?\n')) == 'yes':</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC24" style="width: 441px; height: 14px;">24<span>        </span>continue</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC25" style="width: 441px; height: 14px;">25<span>        </span>else:</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC26" style="width: 441px; height: 14px;">26<span>        </span>print('game over.')</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC27" style="width: 441px; height: 14px;">27<span>        </span>break</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC28" style="width: 441px; height: 14px;">28<span>        </span>else:</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC29" style="width: 441px; height: 14px;">29<span>        </span>print('Draw.Please continue.')</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC30" style="width: 441px; height: 14px;">30        print('')</td>
+<tr style="height: 4.3751px;">
+<td class="blob-code blob-code-inner js-file-line" id="file-rock-paper-scissors-game-LC1" style="width: 441px; height: 4.3751px;">
+<pre>   1    print('''Please pick one:
+   2                rock
+   3                scissors
+   4                paper''')
+   5    
+   6    while True:
+   7        game_dict = {'rock': 1, 'scissors': 2, 'paper': 3}
+   8        player_a = str(input("Player a: "))
+   9        player_b = str(input("Player b: "))
+  10        a = game_dict.get(player_a)
+  11        b = game_dict.get(player_b)
+  12        dif = a - b
+  13    
+  14        if dif in [-1, 2]:
+  15            print('player a wins.')
+  16            if str(input('Do you want to play another game, yes or no?\n')) == 'yes':
+  17                continue
+  18            else:
+  19                print('game over.')
+  20                break
+  21        elif dif in [-2, 1]:
+  22            print('player b wins.')
+  23            if str(input('Do you want to play another game, yes or no?\n')) == 'yes':
+  24                continue
+  25            else:
+  26                print('game over.')
+  27                break
+  28        else:
+  29            print('Draw.Please continue.')
+  30            print('')</pre>
+</td>
 </tr>
 <tr style="height: 15px;">
-<td class="blob-code blob-code-inner js-file-line" style="width: 441px; height: 15px;"><a href="https://gist.github.com/springtan/6f579c3160bdcac2a0df#file-rock-paper-scissors-game">石頭, 布, 剪刀遊戲</a><span> </span>由<span> </span><a href="https://github.com/">GitHub</a> 託管  <span> </span><a href="https://gist.github.com/springtan/6f579c3160bdcac2a0df/raw/8c7899c1115d927feb27b82dc835a032f3473b56/rock,%20paper,%20scissors%20game">查看原始</a></td>
+<td class="blob-code blob-code-inner js-file-line" style="width: 441px; height: 15px;"> <a href="https://gist.github.com/springtan/6f579c3160bdcac2a0df#file-rock-paper-scissors-game">石頭, 布, 剪刀遊戲</a><span> </span>由<span> </span><a href="https://github.com/">GitHub</a> 託管  <span> </span><a href="https://gist.github.com/springtan/6f579c3160bdcac2a0df/raw/8c7899c1115d927feb27b82dc835a032f3473b56/rock,%20paper,%20scissors%20game">查看原始</a></td>
 </tr>
 </tbody>
 </table>

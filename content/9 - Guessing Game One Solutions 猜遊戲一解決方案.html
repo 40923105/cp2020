@@ -149,79 +149,37 @@ img.add_border {
 <div class="js-gist-file-update-container js-task-list-container file-box">
 <div class="file my-2" id="file-guessing_game-py">
 <div class="Box-body p-0 blob-wrapper data type-python" itemprop="text">
-<table border="1" cellspacing="0" class="highlight tab-size js-file-line-container" data-paste-markdown-skip="" data-tab-size="8" style="width: 480px;">
+<table border="1" cellspacing="0" class="highlight tab-size js-file-line-container" data-paste-markdown-skip="" data-tab-size="8" style="width: 480px; border-color: #d1cfcf;">
 <tbody>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC1"><span class="pl-k">  1    import</span> <span class="pl-s1">random</span></td>
+<tr style="height: 14px;">
+<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC1" style="height: 14px;">
+<pre>   1    import random
+   2    
+   3    number = random.randint(1,9)
+   4    guess = 0
+   5    count = 0
+   6    
+   7    
+   8    while guess != number and guess != "exit":
+   9        guess = input("What's your guess?")
+  10        
+  11        if guess == "exit":
+  12            break
+  13        
+  14        guess = int(guess)
+  15        count += 1
+  16        
+  17        if guess &lt; number:
+  18            print("Too low!")
+  19        elif guess &gt; number:
+  20            print("Too high!")
+  21        else:
+  22            print("You got it!")
+  23            print("And it only took you",count,"tries!")</pre>
+</td>
 </tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC2">  2</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC3"><span class="pl-s1">  3    number</span> <span class="pl-c1">=</span> <span class="pl-s1">random</span>.<span class="pl-en">randint</span>(<span class="pl-c1">1</span>,<span class="pl-c1">9</span>)</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC4"><span class="pl-s1">  4    guess</span> <span class="pl-c1">=</span> <span class="pl-c1">0</span></td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC5"><span class="pl-s1">  5    count</span> <span class="pl-c1">=</span> <span class="pl-c1">0</span></td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC6">  6</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC7">  7</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC8"><span class="pl-k">  8    while</span> <span class="pl-s1">guess</span> <span class="pl-c1">!=</span> <span class="pl-s1">number</span> <span class="pl-c1">and</span> <span class="pl-s1">guess</span> <span class="pl-c1">!=</span> <span class="pl-s">"exit"</span>:</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC9"><span class="pl-s1">  9    guess</span> <span class="pl-c1">=</span> <span class="pl-en">input</span>(<span class="pl-s">"What's your guess?"</span>)</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC10">10</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC11"><span class="pl-k">11    if</span> <span class="pl-s1">guess</span> <span class="pl-c1">==</span> <span class="pl-s">"exit"</span>:</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC12"><span class="pl-k">12    break</span></td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC13">13</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC14"><span class="pl-s1">14    guess</span> <span class="pl-c1">=</span> <span class="pl-en">int</span>(<span class="pl-s1">guess</span>)</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC15"><span class="pl-s1">15    count</span> <span class="pl-c1">+=</span> <span class="pl-c1">1</span></td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC16">16</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC17"><span class="pl-k">17    if</span> <span class="pl-s1">guess</span> <span class="pl-c1">&lt;</span> <span class="pl-s1">number</span>:</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC18"><span class="pl-en">18    print</span>(<span class="pl-s">"Too low!"</span>)</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC19"><span class="pl-k">19    elif</span> <span class="pl-s1">guess</span> <span class="pl-c1">&gt;</span> <span class="pl-s1">number</span>:</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC20"><span class="pl-en">20    print</span>(<span class="pl-s">"Too high!"</span>)</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC21"><span class="pl-k">21    else</span>:</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC22"><span class="pl-en">22    print</span>(<span class="pl-s">"You got it!"</span>)</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC23"><span class="pl-en">23    print</span>(<span class="pl-s">"And it only took you"</span>,<span class="pl-s1">count</span>,<span class="pl-s">"tries!"</span>)</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line"><span class="pl-en"><a href="https://gist.github.com/JamieMacIver/10153508#file-guessing_game-py">guessing_game.py</a><span> </span>hosted with ❤ by<span> </span><a href="https://github.com/">GitHub</a>    <a href="https://gist.github.com/JamieMacIver/10153508/raw/8f1eb4d52b84314d7ecef92096c6ddd999ae2264/guessing_game.py">view raw</a></span></td>
+<tr style="height: 15px;">
+<td class="blob-code blob-code-inner js-file-line" style="height: 15px;"><span class="pl-en"> <a href="https://gist.github.com/JamieMacIver/10153508#file-guessing_game-py">guessing_game.py</a><span> </span>hosted with ❤ by<span> </span><a href="https://github.com/">GitHub</a>    <a href="https://gist.github.com/JamieMacIver/10153508/raw/8f1eb4d52b84314d7ecef92096c6ddd999ae2264/guessing_game.py">view raw</a></span></td>
 </tr>
 </tbody>
 </table>
@@ -238,76 +196,36 @@ img.add_border {
 <div class="js-gist-file-update-container js-task-list-container file-box">
 <div class="file my-2" id="file-practice9-py">
 <div class="Box-body p-0 blob-wrapper data type-python" itemprop="text">
-<table border="1" cellspacing="0" class="highlight tab-size js-file-line-container" data-paste-markdown-skip="" data-tab-size="8" style="width: 480px;">
+<table border="1" cellspacing="0" class="highlight tab-size js-file-line-container" data-paste-markdown-skip="" data-tab-size="8" style="width: 480px; border-color: #d1cfcf;">
 <tbody>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC1" style="height: 14px;"><span class="pl-k">  1    import</span> <span class="pl-s1">random</span></td>
+<tr style="height: 14.375px;">
+<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC1" style="height: 14.375px;">
+<pre>   1    import random
+   2    
+   3    rd = random.randint(1,9)
+   4    guess = 0
+   5    c = 0
+   6    while guess != rd and guess != "exit":
+   7        guess = input("Enter a guess between 1 to 9")
+   8    
+   9        if guess == "exit":
+  10            break
+  11    
+  12        guess = int(guess)
+  13        c += 1
+  14    
+  15        if guess &lt; rd:
+  16            print("Too low")
+  17        elif guess &gt; rd:
+  18            print("Too high")
+  19        else:
+  20            print("Right!")
+  21            print("You took only", c, "tries!")
+  22    input()</pre>
+</td>
 </tr>
 <tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC2" style="height: 14px;">  2</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC3" style="height: 14px;"><span class="pl-s1">  3    rd</span> <span class="pl-c1">=</span> <span class="pl-s1">random</span>.<span class="pl-en">randint</span>(<span class="pl-c1">1</span>,<span class="pl-c1">9</span>)</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC4" style="height: 14px;"><span class="pl-s1">  4    guess</span> <span class="pl-c1">=</span> <span class="pl-c1">0</span></td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC5" style="height: 14px;"><span class="pl-s1">  5    c</span> <span class="pl-c1">=</span> <span class="pl-c1">0</span></td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC6" style="height: 14px;"><span class="pl-k">  6    while</span> <span class="pl-s1">guess</span> <span class="pl-c1">!=</span> <span class="pl-s1">rd</span> <span class="pl-c1">and</span> <span class="pl-s1">guess</span> <span class="pl-c1">!=</span> <span class="pl-s">"exit"</span>:</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC7" style="height: 14px;"><span class="pl-s1">  7    guess</span> <span class="pl-c1">=</span> <span class="pl-en">input</span>(<span class="pl-s">"Enter a guess between 1 to 9"</span>)</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC8" style="height: 14px;">  8    </td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC9" style="height: 14px;"><span class="pl-k">  9    if</span> <span class="pl-s1">guess</span> <span class="pl-c1">==</span> <span class="pl-s">"exit"</span>:</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC10" style="height: 14px;"><span class="pl-k">10    break</span></td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC11" style="height: 14px;">11</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC12" style="height: 14px;"><span class="pl-s1">12    guess</span> <span class="pl-c1">=</span> <span class="pl-en">int</span>(<span class="pl-s1">guess</span>)</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC13" style="height: 14px;"><span class="pl-s1">13    c</span> <span class="pl-c1">+=</span> <span class="pl-c1">1</span></td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC14" style="height: 14px;">14</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC15" style="height: 14px;"><span class="pl-k">15    if</span> <span class="pl-s1">guess</span> <span class="pl-c1">&lt;</span> <span class="pl-s1">rd</span>:</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC16" style="height: 14px;"><span class="pl-en">16    print</span>(<span class="pl-s">"Too low"</span>)</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC17" style="height: 14px;"><span class="pl-k">17    elif</span> <span class="pl-s1">guess</span> <span class="pl-c1">&gt;</span> <span class="pl-s1">rd</span>:</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC18" style="height: 14px;"><span class="pl-en">18    print</span>(<span class="pl-s">"Too high"</span>)</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC19" style="height: 14px;"><span class="pl-k">19    else</span>:</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC20" style="height: 14px;"><span class="pl-en">20    print</span>(<span class="pl-s">"Right!"</span>)</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC21" style="height: 14px;"><span class="pl-en">21    print</span>(<span class="pl-s">"You took only"</span>, <span class="pl-s1">c</span>, <span class="pl-s">"tries!"</span>)</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC22" style="height: 14px;"><span class="pl-en">22    input</span>()</td>
-</tr>
-<tr style="height: 14.775px;">
-<td class="blob-code blob-code-inner js-file-line" style="height: 14.775px;"><span class="pl-en"><a href="https://gist.github.com/avillareal98/9a2b5e5b59880d8ea6f8#file-practice9-py">practice9.py</a><span> </span>hosted with ❤ by<span> </span><a href="https://github.com/">GitHub</a>    <a href="https://gist.github.com/avillareal98/9a2b5e5b59880d8ea6f8/raw/e8caf9c3faa972346fbb1d35ae3ab280a087f97c/practice9.py">view raw</a></span></td>
+<td class="blob-code blob-code-inner js-file-line" style="height: 14px;"><span class="pl-en"> <a href="https://gist.github.com/avillareal98/9a2b5e5b59880d8ea6f8#file-practice9-py">practice9.py</a><span> </span>hosted with ❤ by<span> </span><a href="https://github.com/">GitHub</a>    <a href="https://gist.github.com/avillareal98/9a2b5e5b59880d8ea6f8/raw/e8caf9c3faa972346fbb1d35ae3ab280a087f97c/practice9.py">view raw</a></span></td>
 </tr>
 </tbody>
 </table>
@@ -324,106 +242,46 @@ img.add_border {
 <div class="js-gist-file-update-container js-task-list-container file-box">
 <div class="file my-2" id="file-09guessinggameone-py">
 <div class="Box-body p-0 blob-wrapper data type-python" itemprop="text">
-<table border="1" cellspacing="0" class="highlight tab-size js-file-line-container" data-paste-markdown-skip="" data-tab-size="8" style="width: 480px;">
+<table border="1" cellspacing="0" class="highlight tab-size js-file-line-container" data-paste-markdown-skip="" data-tab-size="8" style="width: 480px; border-color: #d1cfcf;">
 <tbody>
 <tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC1"><span class="pl-k">  1    import</span> <span class="pl-s1">random</span></td>
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC1">
+<pre>   1    import random
+   2    
+   3    # Awroken
+   4    
+   5    MINIMUM = 1
+   6    MAXIMUM = 9
+   7    NUMBER = random.randint(MINIMUM, MAXIMUM)
+   8    GUESS = None
+   9    ANOTHER = None
+  10    TRY = 0
+  11    RUNNING = True
+  12    
+  13    print "Alright..."
+  14    
+  15    while RUNNING:
+  16        GUESS = raw_input("What is your lucky number? ")
+  17        if int(GUESS) &lt; NUMBER:
+  18            print "Wrong, too low."
+  19        elif int(GUESS) &gt; NUMBER:
+  20            print "Wrong, too high."
+  21        elif GUESS.lower() == "exit":
+  22            print "Better luck next time."
+  23        elif int(GUESS) == NUMBER:
+  24            print "Yes, that's the one, %s." % str(NUMBER)
+  25            if TRY &lt; 2:
+  26                print "Impressive, only %s tries." % str(TRY)
+  27            elif TRY &gt; 2 and TRY &lt; 10:
+  28                print "Pretty good, %s tries." % str(TRY)
+  29           else:
+  30                print "Bad, %s tries." % str(TRY)
+  31            RUNNING = False
+  32        TRY += 1</pre>
+</td>
 </tr>
 <tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC2">  2 </td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC3"><span class="pl-c">  3     # Awroken</span></td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC4">  4 </td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC5"><span class="pl-v">  5    MINIMUM</span> <span class="pl-c1">=</span> <span class="pl-c1">1</span></td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC6"><span class="pl-v">  6    MAXIMUM</span> <span class="pl-c1">=</span> <span class="pl-c1">9</span></td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC7"><span class="pl-v">  7    NUMBER</span> <span class="pl-c1">=</span> <span class="pl-s1">random</span>.<span class="pl-en">randint</span>(<span class="pl-v">MINIMUM</span>, <span class="pl-v">MAXIMUM</span>)</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC8"><span class="pl-v">  8    GUESS</span> <span class="pl-c1">=</span> <span class="pl-c1">None</span></td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC9"><span class="pl-v">  9    ANOTHER</span> <span class="pl-c1">=</span> <span class="pl-c1">None</span></td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC10"><span class="pl-v">10    TRY</span> <span class="pl-c1">=</span> <span class="pl-c1">0</span></td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC11"><span class="pl-v">11    RUNNING</span> <span class="pl-c1">=</span> <span class="pl-c1">True</span></td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC12">12  </td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC13"><span class="pl-k">13    print</span> <span class="pl-s">"Alright..."</span></td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC14">14 </td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC15"><span class="pl-k">15    while</span> <span class="pl-v">RUNNING</span>:</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC16"><span class="pl-v">16    GUESS</span> <span class="pl-c1">=</span> <span class="pl-en">raw_input</span>(<span class="pl-s">"What is your lucky number? "</span>)</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC17"><span class="pl-k">17    if</span> <span class="pl-en">int</span>(<span class="pl-v">GUESS</span>) <span class="pl-c1">&lt;</span> <span class="pl-v">NUMBER</span>:</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC18"><span class="pl-k">18    print</span> <span class="pl-s">"Wrong, too low."</span></td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC19"><span class="pl-k">19    elif</span> <span class="pl-en">int</span>(<span class="pl-v">GUESS</span>) <span class="pl-c1">&gt;</span> <span class="pl-v">NUMBER</span>:</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC20"><span class="pl-k">20     print</span> <span class="pl-s">"Wrong, too high."</span></td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC21"><span class="pl-k">21    elif</span> <span class="pl-v">GUESS</span>.<span class="pl-en">lower</span>() <span class="pl-c1">==</span> <span class="pl-s">"exit"</span>:</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC22"><span class="pl-k">22    print</span> <span class="pl-s">"Better luck next time."</span></td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC23"><span class="pl-k">23    elif</span> <span class="pl-en">int</span>(<span class="pl-v">GUESS</span>) <span class="pl-c1">==</span> <span class="pl-v">NUMBER</span>:</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC24"><span class="pl-k">24    print</span> <span class="pl-s">"Yes, that's the one, %s."</span> <span class="pl-c1">%</span> <span class="pl-en">str</span>(<span class="pl-v">NUMBER</span>)</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC25"><span class="pl-k">25    if</span> <span class="pl-v">TRY</span> <span class="pl-c1">&lt;</span> <span class="pl-c1">2</span>:</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC26"><span class="pl-k">26    print</span> <span class="pl-s">"Impressive, only %s tries."</span> <span class="pl-c1">%</span> <span class="pl-en">str</span>(<span class="pl-v">TRY</span>)</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC27"><span class="pl-k">27    elif</span> <span class="pl-v">TRY</span> <span class="pl-c1">&gt;</span> <span class="pl-c1">2</span> <span class="pl-c1">and</span> <span class="pl-v">TRY</span> <span class="pl-c1">&lt;</span> <span class="pl-c1">10</span>:</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC28"><span class="pl-k">28    print</span> <span class="pl-s">"Pretty good, %s tries."</span> <span class="pl-c1">%</span> <span class="pl-en">str</span>(<span class="pl-v">TRY</span>)</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC29"><span class="pl-k">29    else</span>:</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC30"><span class="pl-k">30    print</span> <span class="pl-s">"Bad, %s tries."</span> <span class="pl-c1">%</span> <span class="pl-en">str</span>(<span class="pl-v">TRY</span>)</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC31"><span class="pl-v">31    RUNNING</span> <span class="pl-c1">=</span> <span class="pl-c1">False</span></td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC32"><span class="pl-v">32    TRY</span> <span class="pl-c1">+=</span> <span class="pl-c1">1</span></td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line"><span class="pl-v"><a href="https://gist.github.com/anonymous/0502baf8a01e3aa53550#file-09guessinggameone-py">09GuessingGameOne.py</a><span> </span>hosted with ❤ by<span> </span><a href="https://github.com/">GitHub</a>    <a href="https://gist.github.com/anonymous/0502baf8a01e3aa53550/raw/c97abf833f6e5c5bd56479fb77ab0ddbe1535f7b/09GuessingGameOne.py">view raw</a></span></td>
+<td class="blob-code blob-code-inner js-file-line"><span class="pl-v"> <a href="https://gist.github.com/anonymous/0502baf8a01e3aa53550#file-09guessinggameone-py">09GuessingGameOne.py</a><span> </span>hosted with ❤ by<span> </span><a href="https://github.com/">GitHub</a>    <a href="https://gist.github.com/anonymous/0502baf8a01e3aa53550/raw/c97abf833f6e5c5bd56479fb77ab0ddbe1535f7b/09GuessingGameOne.py">view raw</a></span></td>
 </tr>
 </tbody>
 </table>
@@ -445,257 +303,115 @@ img.add_border {
 </ul>
 <p><strong>樣品解決方案</strong></p>
 <p><span><span>一個解決方案的好例子，包括兩個額外功能！</span></span></p>
-<table border="1" cellspacing="0" class="highlight tab-size js-file-line-container" data-paste-markdown-skip="" data-tab-size="8" style="width: 480px;">
+<table border="1" cellspacing="0" class="highlight tab-size js-file-line-container" data-paste-markdown-skip="" data-tab-size="8" style="width: 480px; border-color: #d1cfcf;">
 <tbody>
 <tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC1"><span class="pl-k">  1    import</span> <span class="pl-s1">random</span></td>
+<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC1">
+<pre>   1    import random
+   2    
+   3    number = random.randint(1,9)
+   4    guess = 0
+   5    count = 0
+   6    
+   7    
+   8    while guess != number and guess != "exit":
+   9        guess = input("What's your guess?")
+  10        
+  11        if guess == "exit":
+  12            break
+  13        
+  14        guess = int(guess)
+  15        count += 1
+  16        
+  17        if guess &lt; number:
+  18            print("Too low!")
+  19        elif guess &gt; number:
+  20            print("Too high!")
+  21        else:
+  22            print("You got it!")
+  23            print("And it only took you",count,"tries!")</pre>
+</td>
 </tr>
 <tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC2">  2</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC3"><span class="pl-s1">  3    number</span><span> </span><span class="pl-c1">=</span><span> </span><span class="pl-s1">random</span>.<span class="pl-en">randint</span>(<span class="pl-c1">1</span>,<span class="pl-c1">9</span>)</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC4"><span class="pl-s1">  4    guess</span><span> </span><span class="pl-c1">=</span><span> </span><span class="pl-c1">0</span></td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC5"><span class="pl-s1">  5    count</span><span> </span><span class="pl-c1">=</span><span> </span><span class="pl-c1">0</span></td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC6">  6</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC7">  7</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC8"><span class="pl-k">  8    while</span><span> </span><span class="pl-s1">guess</span><span> </span><span class="pl-c1">!=</span><span> </span><span class="pl-s1">number</span><span> </span><span class="pl-c1">and</span><span> </span><span class="pl-s1">guess</span><span> </span><span class="pl-c1">!=</span><span> </span><span class="pl-s">"exit"</span>:</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC9"><span class="pl-s1">  9    guess</span><span> </span><span class="pl-c1">=</span><span> </span><span class="pl-en">input</span>(<span class="pl-s">"What's your guess?"</span>)</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC10">10</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC11"><span class="pl-k">11    if</span><span> </span><span class="pl-s1">guess</span><span> </span><span class="pl-c1">==</span><span> </span><span class="pl-s">"exit"</span>:</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC12"><span class="pl-k">12    break</span></td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC13">13</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC14"><span class="pl-s1">14    guess</span><span> </span><span class="pl-c1">=</span><span> </span><span class="pl-en">int</span>(<span class="pl-s1">guess</span>)</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC15"><span class="pl-s1">15    count</span><span> </span><span class="pl-c1">+=</span><span> </span><span class="pl-c1">1</span></td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC16">16</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC17"><span class="pl-k">17    if</span><span> </span><span class="pl-s1">guess</span><span> </span><span class="pl-c1">&lt;</span><span> </span><span class="pl-s1">number</span>:</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC18"><span class="pl-en">18    print</span>(<span class="pl-s">"Too low!"</span>)</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC19"><span class="pl-k">19    elif</span><span> </span><span class="pl-s1">guess</span><span> </span><span class="pl-c1">&gt;</span><span> </span><span class="pl-s1">number</span>:</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC20"><span class="pl-en">20    print</span>(<span class="pl-s">"Too high!"</span>)</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC21"><span class="pl-k">21    else</span>:</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC22"><span class="pl-en">22    print</span>(<span class="pl-s">"You got it!"</span>)</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-guessing_game-py-LC23"><span class="pl-en">23    print</span>(<span class="pl-s">"And it only took you"</span>,<span class="pl-s1">count</span>,<span class="pl-s">"tries!"</span>)</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line"><span class="pl-en"><a href="https://gist.github.com/JamieMacIver/10153508#file-guessing_game-py">guessing_game.py</a><span> </span>由<span> </span><a href="https://github.com/">GitHub</a> 託管  <span> </span><a href="https://gist.github.com/JamieMacIver/10153508/raw/8f1eb4d52b84314d7ecef92096c6ddd999ae2264/guessing_game.py">查看原始</a></span></td>
+<td class="blob-code blob-code-inner js-file-line"><span class="pl-en"> <a href="https://gist.github.com/JamieMacIver/10153508#file-guessing_game-py">guessing_game.py</a><span> </span>由<span> </span><a href="https://github.com/">GitHub</a> 託管  <span> </span><a href="https://gist.github.com/JamieMacIver/10153508/raw/8f1eb4d52b84314d7ecef92096c6ddd999ae2264/guessing_game.py">查看原始</a></span></td>
 </tr>
 </tbody>
 </table>
 <p><span><span>還有一個：</span></span></p>
-<table border="1" cellspacing="0" class="highlight tab-size js-file-line-container" data-paste-markdown-skip="" data-tab-size="8" style="width: 480px;">
+<table border="1" cellspacing="0" class="highlight tab-size js-file-line-container" data-paste-markdown-skip="" data-tab-size="8" style="width: 480px; border-color: #d1cfcf;">
 <tbody>
 <tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC1" style="height: 14px;"><span class="pl-k">  1    import</span><span> </span><span class="pl-s1">random</span></td>
+<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC1" style="height: 14px;">
+<pre>   1    import random
+   2    
+   3    rd = random.randint(1,9)
+   4    guess = 0
+   5    c = 0
+   6    while guess != rd and guess != "exit":
+   7        guess = input("Enter a guess between 1 to 9")
+   8    
+   9        if guess == "exit":
+  10            break
+  11    
+  12        guess = int(guess)
+  13        c += 1
+  14    
+  15        if guess &lt; rd:
+  16            print("Too low")
+  17        elif guess &gt; rd:
+  18            print("Too high")
+  19        else:
+  20            print("Right!")
+  21            print("You took only", c, "tries!")
+  22    input()</pre>
+</td>
 </tr>
 <tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC2" style="height: 14px;">  2</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC3" style="height: 14px;"><span class="pl-s1">  3    rd</span><span> </span><span class="pl-c1">=</span><span> </span><span class="pl-s1">random</span>.<span class="pl-en">randint</span>(<span class="pl-c1">1</span>,<span class="pl-c1">9</span>)</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC4" style="height: 14px;"><span class="pl-s1">  4    guess</span><span> </span><span class="pl-c1">=</span><span> </span><span class="pl-c1">0</span></td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC5" style="height: 14px;"><span class="pl-s1">  5    c</span><span> </span><span class="pl-c1">=</span><span> </span><span class="pl-c1">0</span></td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC6" style="height: 14px;"><span class="pl-k">  6    while</span><span> </span><span class="pl-s1">guess</span><span> </span><span class="pl-c1">!=</span><span> </span><span class="pl-s1">rd</span><span> </span><span class="pl-c1">and</span><span> </span><span class="pl-s1">guess</span><span> </span><span class="pl-c1">!=</span><span> </span><span class="pl-s">"exit"</span>:</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC7" style="height: 14px;"><span class="pl-s1">  7    guess</span><span> </span><span class="pl-c1">=</span><span> </span><span class="pl-en">input</span>(<span class="pl-s">"Enter a guess between 1 to 9"</span>)</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC8" style="height: 14px;">  8    </td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC9" style="height: 14px;"><span class="pl-k">  9    if</span><span> </span><span class="pl-s1">guess</span><span> </span><span class="pl-c1">==</span><span> </span><span class="pl-s">"exit"</span>:</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC10" style="height: 14px;"><span class="pl-k">10    break</span></td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC11" style="height: 14px;">11</td>
-</tr>
-<tr style="height: 14.9751px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC12" style="height: 14.9751px;"><span class="pl-s1">12    guess</span><span> </span><span class="pl-c1">=</span><span> </span><span class="pl-en">int</span>(<span class="pl-s1">guess</span>)</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC13" style="height: 14px;"><span class="pl-s1">13    c</span><span> </span><span class="pl-c1">+=</span><span> </span><span class="pl-c1">1</span></td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC14" style="height: 14px;">14</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC15" style="height: 14px;"><span class="pl-k">15    if</span><span> </span><span class="pl-s1">guess</span><span> </span><span class="pl-c1">&lt;</span><span> </span><span class="pl-s1">rd</span>:</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC16" style="height: 14px;"><span class="pl-en">16    print</span>(<span class="pl-s">"Too low"</span>)</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC17" style="height: 14px;"><span class="pl-k">17    elif</span><span> </span><span class="pl-s1">guess</span><span> </span><span class="pl-c1">&gt;</span><span> </span><span class="pl-s1">rd</span>:</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC18" style="height: 14px;"><span class="pl-en">18    print</span>(<span class="pl-s">"Too high"</span>)</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC19" style="height: 14px;"><span class="pl-k">19    else</span>:</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC20" style="height: 14px;"><span class="pl-en">20    print</span>(<span class="pl-s">"Right!"</span>)</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC21" style="height: 14px;"><span class="pl-en">21    print</span>(<span class="pl-s">"You took only"</span>,<span> </span><span class="pl-s1">c</span>,<span> </span><span class="pl-s">"tries!"</span>)</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" id="file-practice9-py-LC22" style="height: 14px;"><span class="pl-en">22    input</span>()</td>
-</tr>
-<tr style="height: 14px;">
-<td class="blob-code blob-code-inner js-file-line" style="height: 14px;"><span class="pl-en"><a href="https://gist.github.com/avillareal98/9a2b5e5b59880d8ea6f8#file-practice9-py">practice9.py</a><span> </span>由<span> </span><a href="https://github.com/">GitHub</a> 託管  <span> </span><a href="https://gist.github.com/avillareal98/9a2b5e5b59880d8ea6f8/raw/e8caf9c3faa972346fbb1d35ae3ab280a087f97c/practice9.py">查看原始</a></span></td>
+<td class="blob-code blob-code-inner js-file-line" style="height: 14px;"><span class="pl-en"> <a href="https://gist.github.com/avillareal98/9a2b5e5b59880d8ea6f8#file-practice9-py">practice9.py</a><span> </span>由<span> </span><a href="https://github.com/">GitHub</a> 託管  <span> </span><a href="https://gist.github.com/avillareal98/9a2b5e5b59880d8ea6f8/raw/e8caf9c3faa972346fbb1d35ae3ab280a087f97c/practice9.py">查看原始</a></span></td>
 </tr>
 </tbody>
 </table>
 <p><span><span>還有很多有用的文字！</span></span></p>
-<table border="1" cellspacing="0" class="highlight tab-size js-file-line-container" data-paste-markdown-skip="" data-tab-size="8" style="width: 480px;">
+<table border="1" cellspacing="0" class="highlight tab-size js-file-line-container" data-paste-markdown-skip="" data-tab-size="8" style="width: 480px; border-color: #d1cfcf;">
 <tbody>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC1"><span class="pl-k">  1    import</span><span> </span><span class="pl-s1">random</span></td>
+<tr style="height: 14px;">
+<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC1" style="height: 14px;">
+<pre>   1    import random
+   2    
+   3    # Awroken
+   4    
+   5    MINIMUM = 1
+   6    MAXIMUM = 9
+   7    NUMBER = random.randint(MINIMUM, MAXIMUM)
+   8    GUESS = None
+   9    ANOTHER = None
+  10    TRY = 0
+  11    RUNNING = True
+  12    
+  13    print "Alright..."
+  14    
+  15    while RUNNING:
+  16        GUESS = raw_input("What is your lucky number? ")
+  17        if int(GUESS) &lt; NUMBER:
+  18            print "Wrong, too low."
+  19        elif int(GUESS) &gt; NUMBER:
+  20            print "Wrong, too high."
+  21        elif GUESS.lower() == "exit":
+  22            print "Better luck next time."
+  23        elif int(GUESS) == NUMBER:
+  24            print "Yes, that's the one, %s." % str(NUMBER)
+  25            if TRY &lt; 2:
+  26                print "Impressive, only %s tries." % str(TRY)
+  27            elif TRY &gt; 2 and TRY &lt; 10:
+  28                print "Pretty good, %s tries." % str(TRY)
+  29           else:
+  30                print "Bad, %s tries." % str(TRY)
+  31            RUNNING = False
+  32        TRY += 1</pre>
+</td>
 </tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC2">  2 </td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC3"><span class="pl-c">  3     # Awroken</span></td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC4">  4 </td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC5"><span class="pl-v">  5    MINIMUM</span><span> </span><span class="pl-c1">=</span><span> </span><span class="pl-c1">1</span></td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC6"><span class="pl-v">  6    MAXIMUM</span><span> </span><span class="pl-c1">=</span><span> </span><span class="pl-c1">9</span></td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC7"><span class="pl-v">  7    NUMBER</span><span> </span><span class="pl-c1">=</span><span> </span><span class="pl-s1">random</span>.<span class="pl-en">randint</span>(<span class="pl-v">MINIMUM</span>,<span> </span><span class="pl-v">MAXIMUM</span>)</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC8"><span class="pl-v">  8    GUESS</span><span> </span><span class="pl-c1">=</span><span> </span><span class="pl-c1">None</span></td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC9"><span class="pl-v">  9    ANOTHER</span><span> </span><span class="pl-c1">=</span><span> </span><span class="pl-c1">None</span></td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC10"><span class="pl-v">10    TRY</span><span> </span><span class="pl-c1">=</span><span> </span><span class="pl-c1">0</span></td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC11"><span class="pl-v">11    RUNNING</span><span> </span><span class="pl-c1">=</span><span> </span><span class="pl-c1">True</span></td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC12">12  </td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC13"><span class="pl-k">13    print</span><span> </span><span class="pl-s">"Alright..."</span></td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC14">14 </td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC15"><span class="pl-k">15    while</span><span> </span><span class="pl-v">RUNNING</span>:</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC16"><span class="pl-v">16    GUESS</span><span> </span><span class="pl-c1">=</span><span> </span><span class="pl-en">raw_input</span>(<span class="pl-s">"What is your lucky number? "</span>)</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC17"><span class="pl-k">17    if</span><span> </span><span class="pl-en">int</span>(<span class="pl-v">GUESS</span>)<span> </span><span class="pl-c1">&lt;</span><span> </span><span class="pl-v">NUMBER</span>:</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC18"><span class="pl-k">18    print</span><span> </span><span class="pl-s">"Wrong, too low."</span></td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC19"><span class="pl-k">19    elif</span><span> </span><span class="pl-en">int</span>(<span class="pl-v">GUESS</span>)<span> </span><span class="pl-c1">&gt;</span><span> </span><span class="pl-v">NUMBER</span>:</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC20"><span class="pl-k">20     print</span><span> </span><span class="pl-s">"Wrong, too high."</span></td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC21"><span class="pl-k">21    elif</span><span> </span><span class="pl-v">GUESS</span>.<span class="pl-en">lower</span>()<span> </span><span class="pl-c1">==</span><span> </span><span class="pl-s">"exit"</span>:</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC22"><span class="pl-k">22    print</span><span> </span><span class="pl-s">"Better luck next time."</span></td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC23"><span class="pl-k">23    elif</span><span> </span><span class="pl-en">int</span>(<span class="pl-v">GUESS</span>)<span> </span><span class="pl-c1">==</span><span> </span><span class="pl-v">NUMBER</span>:</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC24"><span class="pl-k">24    print</span><span> </span><span class="pl-s">"Yes, that's the one, %s."</span><span> </span><span class="pl-c1">%</span><span> </span><span class="pl-en">str</span>(<span class="pl-v">NUMBER</span>)</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC25"><span class="pl-k">25    if</span><span> </span><span class="pl-v">TRY</span><span> </span><span class="pl-c1">&lt;</span><span> </span><span class="pl-c1">2</span>:</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC26"><span class="pl-k">26    print</span><span> </span><span class="pl-s">"Impressive, only %s tries."</span><span> </span><span class="pl-c1">%</span><span> </span><span class="pl-en">str</span>(<span class="pl-v">TRY</span>)</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC27"><span class="pl-k">27    elif</span><span> </span><span class="pl-v">TRY</span><span> </span><span class="pl-c1">&gt;</span><span> </span><span class="pl-c1">2</span><span> </span><span class="pl-c1">and</span><span> </span><span class="pl-v">TRY</span><span> </span><span class="pl-c1">&lt;</span><span> </span><span class="pl-c1">10</span>:</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC28"><span class="pl-k">28    print</span><span> </span><span class="pl-s">"Pretty good, %s tries."</span><span> </span><span class="pl-c1">%</span><span> </span><span class="pl-en">str</span>(<span class="pl-v">TRY</span>)</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC29"><span class="pl-k">29    else</span>:</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC30"><span class="pl-k">30    print</span><span> </span><span class="pl-s">"Bad, %s tries."</span><span> </span><span class="pl-c1">%</span><span> </span><span class="pl-en">str</span>(<span class="pl-v">TRY</span>)</td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC31"><span class="pl-v">31    RUNNING</span><span> </span><span class="pl-c1">=</span><span> </span><span class="pl-c1">False</span></td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line" id="file-09guessinggameone-py-LC32"><span class="pl-v">32    TRY</span><span> </span><span class="pl-c1">+=</span><span> </span><span class="pl-c1">1</span></td>
-</tr>
-<tr>
-<td class="blob-code blob-code-inner js-file-line"><span class="pl-v"><a href="https://gist.github.com/anonymous/0502baf8a01e3aa53550#file-09guessinggameone-py">09GuessingGameOne.py</a><span> </span>由<span> </span><a href="https://github.com/">GitHub</a> 託管  <span> </span><a href="https://gist.github.com/anonymous/0502baf8a01e3aa53550/raw/c97abf833f6e5c5bd56479fb77ab0ddbe1535f7b/09GuessingGameOne.py">查看原始</a></span></td>
+<tr style="height: 15px;">
+<td class="blob-code blob-code-inner js-file-line" style="height: 15px;"><span class="pl-v"> <a href="https://gist.github.com/anonymous/0502baf8a01e3aa53550#file-09guessinggameone-py">09GuessingGameOne.py</a><span> </span>由<span> </span><a href="https://github.com/">GitHub</a> 託管  <span> </span><a href="https://gist.github.com/anonymous/0502baf8a01e3aa53550/raw/c97abf833f6e5c5bd56479fb77ab0ddbe1535f7b/09GuessingGameOne.py">查看原始</a></span></td>
 </tr>
 </tbody>
 </table>
